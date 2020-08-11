@@ -53,7 +53,6 @@ export default class Header extends Component {
             aria-expanded={openMenu}
             aria-label="Toggle navigation"
           >
-            Menu
             <i className="fas fa-bars"></i>
           </button>
 
@@ -62,17 +61,6 @@ export default class Header extends Component {
             id="navbarResponsive"
           >
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="download"
-                >
-                  <a className="nav-link" href="#download">
-                    Download
-                  </a>
-                </Scroll>
-              </li>
               <li className="nav-item">
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}

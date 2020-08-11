@@ -3,17 +3,13 @@ header.masthead {
   position: relative;
 
   width: 100%;
-  padding-top: 150px;
-  padding-bottom: 100px;
+  //padding-top: 150px;
+  //padding-bottom: 100px;
 
   color: white;
-  background: url('../images/bg-pattern.png'), $theme-secondary;
-  background: url('../images/bg-pattern.png'),
-    -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-  background: url('../images/bg-pattern.png'),
-    linear-gradient(to left, $theme-secondary, $theme-tertiary);
+ background: black;
   .header-content {
-    max-width: 500px;
+    max-width: 700px;
     margin-bottom: 100px;
 
     text-align: center;
@@ -21,6 +17,10 @@ header.masthead {
       font-size: 30px;
     }
   }
+  .video{
+    min-width: 500px;
+  }
+
   .device-container {
     max-width: 325px;
     margin-right: auto;
