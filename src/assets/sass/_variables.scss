@@ -2,9 +2,10 @@
 
 // Gray and Brand Colors for use across theme
 
-$theme-primary: #fd79b2;
-$theme-secondary:  #7b4397;
+$theme-primary: rgb(41,216,183);
+$theme-secondary: rgb(51,59,84);
 $theme-tertiary: #7b8fdc;
+$theme-primary-contrast: white;
 
 $gray-base:        #000;
 $gray-darker:      lighten($gray-base, 13.5%); // #222

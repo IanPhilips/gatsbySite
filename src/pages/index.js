@@ -1,101 +1,141 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import Scroll from '../components/Scroll';
+// import Scroll from '../components/Scroll';
 import Footer from '../components/Footer';
 
+import down from "../assets/img/down.png";
+import meter from "../assets/img/meter.png";
+import trash from "../assets/img/trash.png";
+import up from "../assets/img/up.png";
+import dashboard from "../assets/images/dashboard_v2.png";
+import vid from "../assets/videos/JumboShortMRF.mp4";
 
-import vid from "../assets/videos/JumboMRF.mp4"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faAddressBook,
-} from '@fortawesome/free-solid-svg-icons'
-import emailjs from 'emailjs-com';
+  MDBAnimation,
+  MDBBtn,
+} from 'mdbreact';
 
-const IndexPage = () => (
+class IndexPage extends Component{
+
+
+  render(){
+  return(
   <Layout>
     <Header />
 
     <header className="masthead">
             <video autoPlay={"autoplay"} loop={"loop"} muted className={"video"}
-            style={{height:"100vh"}}>
+            style={{
+              height:"100vh",
+              width:"100vw",
+              objectFit:"cover"
+            }}>
               <source src={vid} type={"video/mp4"}/>
             </video>
 
-      <div className={"col-lg-12"} style={{
+      <div  style={{
         position:"absolute",
-        alignContent:"center",
         top:0,
         background: "rgba(190,190,190,.3)",
-        height:"100vh"
+        height:"100vh",
+        width:"100vw",
+        objectFit:"cover"
       }}>
       <div className="header-content mx-auto"
            style={{
-             // top:"10vh",
              left:"50vh",
-             margin:"20vh",
+             marginTop:"30vh",
            }}
            >
-        <h1 className="mb-5">
-          Software Solutions analyzes inbound material to your MRF to
-          reduce operation costs, bill partners according to their material,
-          and reduce contamination.
+        <h1 className={"text-center m-5"}>
+          Live Actionable Data About Your Inbound Material
         </h1>
-        <Scroll type="id" element="contact">
-          <a href="#contact" className="btn btn-outline btn-xl">
+        <h3 className={"m-5 text-center"}>Make Informed Decisions, Get Repeatable
+        Results </h3>
+        {/*<Scroll type="id" element="contact">*/}
+        <div className={"justify-content-center align-content-center mx-auto"}>
+          <MDBBtn href={"/contact"} className={"bg-primary btn-xl"}>
             Sign up for our Beta
-          </a>
-        </Scroll>
+          </MDBBtn>
+        </div>
+        {/*</Scroll>*/}
       </div>
       </div>
     </header>
 
 
 
-    <section className="features" id="features">
+    <section className="features" id="benefits">
       <div className="container">
         <div className="section-heading text-center">
-          <h2>Data like you've never seen</h2>
-          <p className="text-muted">
-          </p>
-          <hr />
+          <h2>AI Software Benefits</h2>
         </div>
         <div className="row">
-
           <div className="col-lg-12 my-auto">
-            <div className="container-fluid">
+            <div className="container-fluid ">
               <div className="row">
-                <div className="col-lg-4">
-                  <div className="feature-item">
-                  <FontAwesomeIcon icon={faAddressBook} size="4x" className={"mb-5"}/>
 
-                    <h3>Flexible Use</h3>
-                    <p className="text-muted">
-                      Put an image, video, animation, or anything else in the
-                      screen!
-                    </p>
-                  </div>
-                </div>
-                <div className="col-lg-4">
+                <div className="col-lg-3">
+                <MDBAnimation type={"fadeIn"} duration={"1s"} delay={"0.25s"} reveal={"true"}>
                   <div className="feature-item">
-                    <FontAwesomeIcon icon={faAddressBook} size="4x" className={"mb-5"}/>
-                    <h3>Free to Use</h3>
-                    <p className="text-muted">
-                      As always, this theme is free to download and use for any
-                      purpose!
+                    <img className={"mb-4 align-content-center justify-content-center"}
+                         src={down} alt={""} style={{height:"125px"}}
+                    />
+                    <h5> Reduce Operational Costs</h5>
+                    <p className="text-muted mt-4">
+                      Etc. Etc.
                     </p>
                   </div>
+                </MDBAnimation>
                 </div>
-                <div className="col-lg-4">
+
+                <div className="col-lg-3">
+                  <MDBAnimation type={"fadeIn"} duration={"1s"} delay={".5s"} reveal={"true"}>
+
                   <div className="feature-item">
-                    <FontAwesomeIcon icon={faAddressBook} size="4x" className={"mb-5"}/>
-                    <h3>Open Source</h3>
-                    <p className="text-muted">
-                      Since this theme is MIT licensed, you can use it
-                      commercially!
+                    <img className={"mb-4 align-content-center justify-content-center"}
+                         src={trash} alt={""} style={{height:"125px"}}
+                    />
+                    <h5>Track Contamination</h5>
+                    <p className="text-muted mt-4">
+                      Charge more for contamination and let the market work for you
+
                     </p>
                   </div>
+                  </MDBAnimation>
+                </div>
+
+                <div className="col-lg-3">
+                  <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} delay={"1s"}>
+                  <div className="feature-item">
+                    <img className={"mb-4 align-content-center justify-content-center"}
+                         src={up} alt={""} style={{height:"125px"}}
+                    />
+                    <h5>Increase Revenue</h5>
+                    <p className="text-muted mt-4">
+                      Bill partners according to what materials they bring in
+
+                    </p>
+                  </div>
+                  </MDBAnimation>
+                </div>
+
+                <div className="col-lg-3">
+                  <MDBAnimation type={"fadeIn"} duration={"1s"} delay={"1.25s"} reveal={"true"}>
+
+                    <div className="feature-item">
+                      <img className={"mb-4 align-content-center justify-content-center"}
+                           src={meter} alt={""} style={{height:"125px"}}
+                      />
+                      <h5>Increase Efficiency</h5>
+                      <p className="text-muted mt-4">
+                        Charge more for contamination and let the market work for you
+
+                      </p>
+                    </div>
+                  </MDBAnimation>
                 </div>
             </div>
           </div>
@@ -104,34 +144,83 @@ const IndexPage = () => (
       </div>
     </section>
 
-
-
-    <section className="contact bg-primary" id="contact">
+    <section className="features " id="features">
       <div className="container">
-        <h2>
-          Sign up for our Beta
-        </h2>
-        <form className="contact-form" onSubmit={sendEmail}>
-          <input type="email" name="email" />
-          <br/>
-          <input type="submit" value="Submit" className="btn btn-outline btn-xl mt-3" />
-        </form>
+        <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
+
+        <div className="section-heading text-center">
+          <h3>Configurable Data Puts You in Control</h3>
+        </div>
+        </MDBAnimation>
+        <div className="row">
+          <div className="col-lg-8 my-auto">
+            <MDBAnimation type={"slideInLeft"} duration={"1s"} reveal={"true"} >
+            <div className="container-fluid">
+              <div className="row mb-5 align-content-center justify-content-center">
+              <img src={dashboard} alt={""} style={{width:"70vw", boxShadow:"8px 8px 5px grey"}}/>
+              </div>
+            </div>
+            </MDBAnimation>
+          </div>
+          <div className="col-lg-4 my-auto">
+            <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
+              <h5> Dashboard Intro</h5>
+              <hr align={"left"} className={"align-content-left justify-content-left"}/>
+              <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+              <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+              <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+            </MDBAnimation>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-4 order-sm-1 order-md-0 my-auto">
+            <MDBAnimation type={"slideInLeft"} duration={"1s"} reveal={"true"} >
+              <h5> Dashboard Detail</h5>
+              <hr align={"left"} className={"align-content-left justify-content-left"}/>
+              <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+              <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+              <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+            </MDBAnimation>
+          </div>
+          <div className="col-lg-8  order-sm-0  order-md-1 my-auto">
+            <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
+              <div className="container-fluid">
+                <div className="row mb-5 align-content-center justify-content-center">
+                  <img src={dashboard} alt={""} style={{width:"60vw", boxShadow:"8px 8px 5px grey"}}/>
+                </div>
+              </div>
+            </MDBAnimation>
+          </div>
+
+        </div>
+
       </div>
     </section>
+
+
+
+    <section className="contact bg-secondary" id="contact">
+      <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >
+      <div className="container text-right row col-lg-12">
+        <div className={"col-lg-9 text-white my-auto"}>
+          <h5> Some random quote here about how this software will improve their lives. </h5>
+        </div>
+        <div className={"col-lg-3 text-center"}>
+          <MDBBtn href={"/contact"} className={"bg-primary btn-xl"}>
+            Sign up for our Beta
+          </MDBBtn>
+        </div>
+      </div>
+      </MDBAnimation>
+    </section>
+
+
 
     <Footer />
   </Layout>
 
 );
-function sendEmail(e) {
-  e.preventDefault();
+}
 
-  emailjs.sendForm('gmail', 'template_jjrY3GEB', e.target,
-    'user_cV1OsELmIYfBvcQFwMZHH')
-    .then((result) => {
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text);
-    });
 }
 export default IndexPage;

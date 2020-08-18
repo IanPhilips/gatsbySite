@@ -1,12 +1,18 @@
 // Bootstrap overrides for this template
 .bg-primary {
+    color:$theme-primary-contrast;
     background: $theme-primary;
     background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
     background: linear-gradient($theme-primary, darken($theme-primary, 5%));
 }
+.bg-secondary{
+    background: $theme-secondary;
+    background: -webkit-linear-gradient($theme-secondary, darken($theme-secondary, 5%));
+    background: linear-gradient($theme-secondary, darken($theme-secondary, 5%));
+}
 
 .text-primary {
-    color: $theme-primary;
+    color: $theme-primary  !important;
 }
 
 .no-gutter > [class*='col-'] {
