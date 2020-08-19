@@ -3,31 +3,27 @@ header.masthead {
   position: relative;
 
   width: 100%;
+  height: 100vh;
   //padding-top: 150px;
   //padding-bottom: 100px;
 
   color: white;
- background: white;
+  background: white;
   .header-content {
     max-width: 1000px;
     margin-bottom: 100px;
 
     text-align: center;
-    h1 {
-      font-size: 30px;
-      font-weight: bold;
-    }
+
     h3{
       font-weight: bold;
     }
 
     .btn{
-    color:white;
+      color:white;
     }
   }
-  .video{
-    min-width: 500px;
-  }
+
 
   .device-container {
     max-width: 325px;
@@ -38,6 +34,9 @@ header.masthead {
     }
   }
   @media (min-width: 992px) {
+    h1 {
+      font-size: 50px;
+    }
     height: 100vh;
     min-height: 775px;
     padding-top: 0;
@@ -46,9 +45,7 @@ header.masthead {
       margin-bottom: 0;
 
       text-align: center;
-      h1 {
-        font-size: 50px;
-      }
+
     }
     .device-container {
       max-width: 325px;

@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 import down from "../assets/img/down.png";
+import recyc from "../assets/img/recyc.jpeg";
 import meter from "../assets/img/meter.png";
 import trash from "../assets/img/trash.png";
 import up from "../assets/img/up.png";
@@ -28,8 +29,8 @@ class IndexPage extends Component{
     <header className="masthead">
             <video autoPlay={"autoplay"} loop={"loop"} muted className={"video"}
             style={{
-              height:"100vh",
-              width:"100vw",
+              height:"100%",
+              width:"100%",
               objectFit:"cover"
             }}>
               <source src={vid} type={"video/mp4"}/>
@@ -38,9 +39,9 @@ class IndexPage extends Component{
       <div  style={{
         position:"absolute",
         top:0,
-        background: "rgba(190,190,190,.3)",
-        height:"100vh",
-        width:"100vw",
+        background: "rgba(100,100,100,.3)",
+        height:"100%",
+        width:"100%",
         objectFit:"cover"
       }}>
       <div className="header-content mx-auto"
@@ -56,7 +57,7 @@ class IndexPage extends Component{
         Results </h3>
         {/*<Scroll type="id" element="contact">*/}
         <div className={"justify-content-center align-content-center mx-auto"}>
-          <MDBBtn href={"/contact"} className={"bg-primary btn-xl"}>
+          <MDBBtn href={"/contact"} className={"btn-xl"}>
             Sign up for our Beta
           </MDBBtn>
         </div>
@@ -67,9 +68,9 @@ class IndexPage extends Component{
 
 
 
-    <section className="features" id="benefits">
+    <section className="features bg-gray-slant" id="benefits">
       <div className="container">
-        <div className="section-heading text-center">
+        <div className="section-heading text-center ">
           <h2>AI Software Benefits</h2>
         </div>
         <div className="row">
@@ -157,12 +158,12 @@ class IndexPage extends Component{
             <MDBAnimation type={"slideInLeft"} duration={"1s"} reveal={"true"} >
             <div className="container-fluid">
               <div className="row mb-5 align-content-center justify-content-center">
-              <img src={dashboard} alt={""} style={{width:"70vw", boxShadow:"8px 8px 5px grey"}}/>
+              <img src={dashboard} alt={""} style={{width:"60vw", boxShadow:"8px 8px 5px lightgray"}}/>
               </div>
             </div>
             </MDBAnimation>
           </div>
-          <div className="col-lg-4 my-auto">
+          <div className="col-lg-4 my-auto bg-gray p-4">
             <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
               <h5> Dashboard Intro</h5>
               <hr align={"left"} className={"align-content-left justify-content-left"}/>
@@ -173,7 +174,7 @@ class IndexPage extends Component{
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-4 order-sm-1 order-md-0 my-auto">
+          <div className="col-lg-4 my-auto bg-gray p-4">
             <MDBAnimation type={"slideInLeft"} duration={"1s"} reveal={"true"} >
               <h5> Dashboard Detail</h5>
               <hr align={"left"} className={"align-content-left justify-content-left"}/>
@@ -182,11 +183,11 @@ class IndexPage extends Component{
               <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
             </MDBAnimation>
           </div>
-          <div className="col-lg-8  order-sm-0  order-md-1 my-auto">
+          <div className="col-lg-8 order-first order-lg-last">
             <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
               <div className="container-fluid">
                 <div className="row mb-5 align-content-center justify-content-center">
-                  <img src={dashboard} alt={""} style={{width:"60vw", boxShadow:"8px 8px 5px grey"}}/>
+                  <img src={dashboard} alt={""} style={{width:"60vw", boxShadow:"8px 8px 5px lightgray"}}/>
                 </div>
               </div>
             </MDBAnimation>
@@ -198,15 +199,16 @@ class IndexPage extends Component{
     </section>
 
 
+    <img src={recyc} style={{width:"100%", height:"400px", objectFit:"cover"}} />
 
-    <section className="contact bg-secondary" id="contact">
+    <section className="contact bg-secondary" id="contact" style={{padding:"30px"}}>
       <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >
       <div className="container text-right row col-lg-12">
         <div className={"col-lg-9 text-white my-auto"}>
           <h5> Some random quote here about how this software will improve their lives. </h5>
         </div>
         <div className={"col-lg-3 text-center"}>
-          <MDBBtn href={"/contact"} className={"bg-primary btn-xl"}>
+          <MDBBtn href={"/contact"} className={"btn-xl"}>
             Sign up for our Beta
           </MDBBtn>
         </div>
