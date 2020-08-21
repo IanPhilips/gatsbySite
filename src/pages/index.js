@@ -15,7 +15,7 @@ import vid from "../assets/videos/JumboShortMRF.mp4";
 
 import {
   MDBAnimation,
-  MDBBtn,
+  MDBBtn, MDBCardImage,
 } from 'mdbreact';
 
 class IndexPage extends Component{
@@ -154,16 +154,12 @@ class IndexPage extends Component{
         </div>
         </MDBAnimation>
         <div className="row">
-          <div className="col-lg-8 my-auto">
+          <div className="col-lg-8 ">
             <MDBAnimation type={"slideInLeft"} duration={"1s"} reveal={"true"} >
-            <div className="container-fluid">
-              <div className="row mb-5 align-content-center justify-content-center">
-              <img src={dashboard} alt={""} style={{width:"60vw", boxShadow:"8px 8px 5px lightgray"}}/>
-              </div>
-            </div>
+              <img src={dashboard} alt={""} style={{width:"100%", boxShadow:"8px 8px 5px lightgray"}}/>
             </MDBAnimation>
           </div>
-          <div className="col-lg-4 my-auto bg-gray p-4">
+          <div className="col-lg-4 mt-3 bg-gray p-4">
             <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
               <h5> Dashboard Intro</h5>
               <hr align={"left"} className={"align-content-left justify-content-left"}/>
@@ -173,8 +169,8 @@ class IndexPage extends Component{
             </MDBAnimation>
           </div>
         </div>
-        <div className="row">
-          <div className="col-lg-4 my-auto bg-gray p-4">
+        <div className="row mt-4">
+          <div className="col-lg-4 mt-3 bg-gray p-4">
             <MDBAnimation type={"slideInLeft"} duration={"1s"} reveal={"true"} >
               <h5> Dashboard Detail</h5>
               <hr align={"left"} className={"align-content-left justify-content-left"}/>
@@ -185,11 +181,7 @@ class IndexPage extends Component{
           </div>
           <div className="col-lg-8 order-first order-lg-last">
             <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
-              <div className="container-fluid">
-                <div className="row mb-5 align-content-center justify-content-center">
-                  <img src={dashboard} alt={""} style={{width:"60vw", boxShadow:"8px 8px 5px lightgray"}}/>
-                </div>
-              </div>
+                  <img src={dashboard} alt={""} style={{width:"100%", boxShadow:"8px 8px 5px lightgray"}}/>
             </MDBAnimation>
           </div>
 

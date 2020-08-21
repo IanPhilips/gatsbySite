@@ -18,7 +18,7 @@ export default function Footer() {
         <p> 1023 Walnut St #100, Boulder, CO 80302</p>
         <br/> <br/> <br/>
 
-        <p>&copy; Soltara 2020. All Rights Reserved.</p>
+        <p>&copy; BluTerra 2020. All Rights Reserved.</p>
         {/*<ul className="list-inline">*/}
           {/*<li className="list-inline-item">*/}
           {/*  <a href="/#">Privacy</a>*/}

@@ -98,22 +98,22 @@ class Contact extends Component{
                 <br/>
               </div>
               {/*BETA*/}
-              <div className={"row"}>
+              <div className={"row my-3"}>
                 <div className={"col-lg-1"}/>
                 <label htmlFor={"beta"} className={"col-lg-1 m-3 my-1"}> Interests </label>
-                <div className={"row col-lg-3 text-left my-auto"}>
+                <div className={"row col-lg-3 text-left mt-2 "}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          id="beta" name="beta" value="beta"
                   />
                   <p className={"my-1 ml-2"}>Beta Program</p>
                 </div>
-                <div className={"row col-lg-3 text-left my-auto"}>
+                <div className={"row col-lg-3 text-left mt-2"}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          name="learn" value="learn" id={"learn"}
                   />
                   <p className={"my-1 ml-2"}>Learn More</p>
                 </div>
-                <div className={"row col-lg-3 text-left my-auto"}>
+                <div className={"row col-lg-3 text-left mt-2"}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          name="pricing" value="pricing" id={"pricing"}
                   />
