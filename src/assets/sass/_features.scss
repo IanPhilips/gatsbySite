@@ -3,6 +3,32 @@ section.features {
     .bg-gray{
         border-radius: 10px;
     }
+
+    @media (min-width: 992px) {
+        .bg-left-bleed:before {
+            left: -2em;
+            background: rgb(245, 245, 245);
+            content: '';
+            display: block;
+            position: absolute;
+            width: 20em;
+            top: 0;
+            bottom: 0;
+            z-index: -1
+        }
+        .bg-right-bleed:before {
+            right: -2em;
+            background: rgb(245, 245, 245);
+            content: '';
+            display: block;
+            position: absolute;
+            width: 20em;
+            top: 0;
+            bottom: 0;
+            z-index: -1
+        }
+    }
+
     .section-heading {
         margin-bottom: 50px;
         h2 {

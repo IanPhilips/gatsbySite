@@ -39,7 +39,7 @@ class Contact extends Component{
                 src={bg}
                 alt={""}
                  style={{
-                   height:"40vh",
+                   height:"30vh",
                    width:"100vw",
                    objectFit:"cover"
                  }}>
@@ -49,14 +49,14 @@ class Contact extends Component{
             position:"absolute",
             top:0,
             background: "rgba(190,190,190,.3)",
-            height:"40vh",
+            height:"30vh",
             width:"100vw",
             objectFit:"cover"
           }}>
             <div className="header-content text-white mx-auto"
                  style={{
                    left:"50vh",
-                   marginTop:"20vh",
+                   marginTop:"15vh",
                  }}
             >
               <h1 className={"text-center m-5"}>
@@ -69,70 +69,73 @@ class Contact extends Component{
 
         <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >
           <div className="container mt-5 mb-5">
-            <form className="contact-form" onSubmit={this.sendEmail}>
+            <form className="contact-form text-right" onSubmit={this.sendEmail}>
               {/*NAME*/}
               <div className={"row"}>
-                <div className={"col-lg-1"}/>
+                <div className={"col-lg-2"}/>
                 <label htmlFor={"name"} className={"col-lg-1 m-3 my-1"}> Name </label>
-                <input className={"mt-3 col-lg-8"} type="text" id={"name"}
+                <input className={"mt-3 col-lg-6"} type="text" id={"name"}
                        placeholder={""} name="name"
                        style={{borderRadius:"5px", borderWidth:"1.5px"}}/>
-                <br/>
+                <div className={"col-lg-2"}/>
               </div>
               {/*PHONE*/}
               <div className={"row"}>
-                <div className={"col-lg-1"}/>
+                <div className={"col-lg-2"}/>
                 <label htmlFor={"phone"} className={"col-lg-1 m-3 my-1"}> Phone </label>
-                <input className={"mt-3 col-lg-8"} type="text" id={"phone"}
+                <input className={"mt-3 col-lg-6"} type="text" id={"phone"}
                        placeholder={""} name="phone"
                        style={{borderRadius:"5px", borderWidth:"1.5px"}}/>
-                <br/>
+                <div className={"col-lg-2"}/>
               </div>
               {/*EMAIL*/}
               <div className={"row"}>
-                <div className={"col-lg-1"}/>
+                <div className={"col-lg-2"}/>
                 <label htmlFor={"email"} className={"col-lg-1 m-3 my-1"}> Email </label>
-                <input className={"mt-3 col-lg-8"} type="email" id={"email"}
+                <input className={"mt-3 col-lg-6"} type="email" id={"email"}
                        placeholder={""} name="email"
                        style={{borderRadius:"5px", borderWidth:"1.5px"}}/>
-                <br/>
+                <div className={"col-lg-2"}/>
               </div>
               {/*BETA*/}
-              <div className={"row my-3"}>
-                <div className={"col-lg-1"}/>
+              <div className={"row my-2"}>
+                <div className={"col-lg-2"}/>
                 <label htmlFor={"beta"} className={"col-lg-1 m-3 my-1"}> Interests </label>
-                <div className={"row col-lg-3 text-left mt-2 "}>
+                <div className={"row col-lg-2 text-left mt-3 mr-2"}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          id="beta" name="beta" value="beta"
                   />
                   <p className={"my-1 ml-2"}>Beta Program</p>
                 </div>
-                <div className={"row col-lg-3 text-left mt-2"}>
+                <div className={"row col-lg-2 text-left mt-3 mr-2"}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          name="learn" value="learn" id={"learn"}
                   />
                   <p className={"my-1 ml-2"}>Learn More</p>
                 </div>
-                <div className={"row col-lg-3 text-left mt-2"}>
+                <div className={"row col-lg-2 text-left mt-3"}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          name="pricing" value="pricing" id={"pricing"}
                   />
                   <p className={"my-1 ml-2"}>Pricing</p>
                 </div>
+                <div className={"col-lg-3"}/>
               </div>
                 {/*MESSAGE*/}
               <div className={"row"}>
-                <div className={"col-lg-1"}/>
+                <div className={"col-lg-2"}/>
                 <label htmlFor={"message"} className={"col-lg-1 m-3 my-1"}> Message </label>
-                <textarea className={"mt-3 col-lg-8"} rows={"4"} cols={"50"}
+                <textarea className={"mt-3 col-lg-6"} rows={"4"} cols={"50"}
                           placeholder={""} style={{borderRadius:"5px", borderWidth:"1.5px"}}
                           name="message" id={"message"}/>
-                <br/>
+                <div className={"col-lg-2"}/>
               </div>
               {/*SUBMIT*/}
               <div className={"col-lg-12 text-center"}>
               <input type="submit" onClick={ ()=>this.toggle()} value="Submit"
-                     className="btn-default btn btn-xl mt-3" />
+                     className="btn-default btn btn-xl mt-3"
+                     style={{width:"200px"}}
+              />
               </div>
             </form>
           </div>
@@ -146,7 +149,8 @@ class Contact extends Component{
             </MDBModalFooter>
           </MDBModal>
         </MDBContainer>
-
+        <section className="contact bg-secondary" id="contact" style={{padding:"22px"}}>
+        </section>
         <Footer />
       </Layout>
 

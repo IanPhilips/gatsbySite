@@ -159,7 +159,7 @@ class IndexPage extends Component{
               <img src={dashboard} alt={""} style={{width:"100%", boxShadow:"8px 8px 5px lightgray"}}/>
             </MDBAnimation>
           </div>
-          <div className="col-lg-4 mt-3 bg-gray p-4">
+          <div className="col-lg-4 mt-3 bg-gray bg-left-bleed p-4">
             <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
               <h5> Dashboard Intro</h5>
               <hr align={"left"} className={"align-content-left justify-content-left"}/>
@@ -170,7 +170,7 @@ class IndexPage extends Component{
           </div>
         </div>
         <div className="row mt-4">
-          <div className="col-lg-4 mt-3 bg-gray p-4">
+          <div className="col-lg-4 mt-3 bg-right-bleed bg-gray p-4">
             <MDBAnimation type={"slideInLeft"} duration={"1s"} reveal={"true"} >
               <h5> Dashboard Detail</h5>
               <hr align={"left"} className={"align-content-left justify-content-left"}/>
@@ -193,7 +193,7 @@ class IndexPage extends Component{
 
     <img src={recyc} style={{width:"100%", height:"400px", objectFit:"cover"}} />
 
-    <section className="contact bg-secondary" id="contact" style={{padding:"30px"}}>
+    <section className="contact bg-secondary" id="contact" style={{padding:"20px"}}>
       <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >
       <div className="container text-right row col-lg-12">
         <div className={"col-lg-9 text-white my-auto"}>

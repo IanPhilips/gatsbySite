@@ -1,4 +1,5 @@
 import React from 'react';
+import config from '../../config';
 
 export default function Footer() {
   return (
@@ -6,19 +7,19 @@ export default function Footer() {
       <div className="container text-left">
         <br/> <br/>
 
-        <h3> Let's Chat.</h3>
+        <h3> Let's Chat. </h3>
         <br/> <br/>
 
-        <p> email@email.com</p>
+        <p> contact@bluterrasystems.com </p>
         <br/>
 
-        <p> 703-666-6666</p>
+        <p> +1 303.842.8550 </p>
         <br/>
 
-        <p> 1023 Walnut St #100, Boulder, CO 80302</p>
+        <p> Boulder, CO 80302 </p>
         <br/> <br/> <br/>
 
-        <p>&copy; BluTerra 2020. All Rights Reserved.</p>
+        <p> &copy; {config.siteTitle} 2020. All Rights Reserved. </p>
         {/*<ul className="list-inline">*/}
           {/*<li className="list-inline-item">*/}
           {/*  <a href="/#">Privacy</a>*/}

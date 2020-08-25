@@ -62,6 +62,12 @@
     }
 }
 
+@mixin logo-font {
+    font-family: 'Baloo 2', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
 @mixin heading-font {
     font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 200;
