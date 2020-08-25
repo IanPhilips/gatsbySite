@@ -72,48 +72,44 @@ class Contact extends Component{
             <form className="contact-form text-right" onSubmit={this.sendEmail}>
               {/*NAME*/}
               <div className={"row"}>
-                <div className={"col-lg-2"}/>
-                <label htmlFor={"name"} className={"col-lg-1 m-3 my-1"}> Name </label>
-                <input className={"mt-3 col-lg-6"} type="text" id={"name"}
+                <label htmlFor={"name"} className={"col-2 col-lg-3 m-3 my-1"}> Name </label>
+                <input className={"mt-3 col-lg-6 col-8 "} type="text" id={"name"}
                        placeholder={""} name="name"
                        style={{borderRadius:"5px", borderWidth:"1.5px"}}/>
                 <div className={"col-lg-2"}/>
               </div>
               {/*PHONE*/}
               <div className={"row"}>
-                <div className={"col-lg-2"}/>
-                <label htmlFor={"phone"} className={"col-lg-1 m-3 my-1"}> Phone </label>
-                <input className={"mt-3 col-lg-6"} type="text" id={"phone"}
+                <label htmlFor={"phone"} className={"col-2 col-lg-3 m-3 my-1"}> Phone </label>
+                <input className={"mt-3 col-lg-6 col-8 "} type="text" id={"phone"}
                        placeholder={""} name="phone"
                        style={{borderRadius:"5px", borderWidth:"1.5px"}}/>
                 <div className={"col-lg-2"}/>
               </div>
               {/*EMAIL*/}
               <div className={"row"}>
-                <div className={"col-lg-2"}/>
-                <label htmlFor={"email"} className={"col-lg-1 m-3 my-1"}> Email </label>
-                <input className={"mt-3 col-lg-6"} type="email" id={"email"}
+                <label htmlFor={"email"} className={"col-2 col-lg-3 m-3 my-1"}> Email </label>
+                <input className={"mt-3 col-lg-6 col-8 "} type="email" id={"email"}
                        placeholder={""} name="email"
                        style={{borderRadius:"5px", borderWidth:"1.5px"}}/>
                 <div className={"col-lg-2"}/>
               </div>
               {/*BETA*/}
               <div className={"row my-2"}>
-                <div className={"col-lg-2"}/>
-                <label htmlFor={"beta"} className={"col-lg-1 m-3 my-1"}> Interests </label>
-                <div className={"row col-lg-2 text-left mt-3 mr-2"}>
+                <label htmlFor={"beta"} className={"col-2 col-lg-3 m-3 my-1 "}>Interests</label>
+                <div className={"row col-3 col-lg-2 text-left mt-3 mr-2 interest-section"}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          id="beta" name="beta" value="beta"
                   />
                   <p className={"my-1 ml-2"}>Beta Program</p>
                 </div>
-                <div className={"row col-lg-2 text-left mt-3 mr-2"}>
+                <div className={"row col-3 col-lg-2 text-left mt-3 mr-2"}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          name="learn" value="learn" id={"learn"}
                   />
                   <p className={"my-1 ml-2"}>Learn More</p>
                 </div>
-                <div className={"row col-lg-2 text-left mt-3"}>
+                <div className={"row col-3 col-lg-2  text-left mt-3"}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          name="pricing" value="pricing" id={"pricing"}
                   />
@@ -123,11 +119,11 @@ class Contact extends Component{
               </div>
                 {/*MESSAGE*/}
               <div className={"row"}>
-                <div className={"col-lg-2"}/>
-                <label htmlFor={"message"} className={"col-lg-1 m-3 my-1"}> Message </label>
-                <textarea className={"mt-3 col-lg-6"} rows={"4"} cols={"50"}
+                <label htmlFor={"message"} className={"col-2 col-lg-3 m-3 my-1"}> Message </label>
+                <textarea className={"mt-3 col-lg-6 col-8 contact-text "} rows={"4"} cols={"50"}
                           placeholder={""} style={{borderRadius:"5px", borderWidth:"1.5px"}}
-                          name="message" id={"message"}/>
+                          name="message" id={"message"}
+                />
                 <div className={"col-lg-2"}/>
               </div>
               {/*SUBMIT*/}
@@ -169,3 +165,5 @@ class Contact extends Component{
   }
 }
 export default Contact;
+
+
