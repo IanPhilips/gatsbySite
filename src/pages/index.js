@@ -15,7 +15,7 @@ import vid from "../assets/videos/JumboShortMRF.mp4";
 
 import {
   MDBAnimation,
-  MDBBtn, MDBCardImage,
+  MDBBtn,
 } from 'mdbreact';
 
 class IndexPage extends Component{
@@ -191,7 +191,7 @@ class IndexPage extends Component{
     </section>
 
 
-    <img src={recyc} style={{width:"100%", height:"400px", objectFit:"cover"}} />
+    <img src={recyc} alt={"recycling"} style={{width:"100%", height:"400px", objectFit:"cover"}} />
 
     <section className="contact bg-secondary" id="contact" style={{padding:"20px"}}>
       <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >

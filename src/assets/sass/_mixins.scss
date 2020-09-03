@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
 // Mixins
 @mixin transition-all() {
     -webkit-transition: all .35s;
@@ -63,9 +65,9 @@
 }
 
 @mixin logo-font {
-    font-family: 'Baloo 2', 'Helvetica', 'Arial', 'sans-serif';
-    font-weight: 200;
-    letter-spacing: 1px;
+    font-family: 'Comfortaa', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 100;
+    letter-spacing: 10px;
 }
 
 @mixin heading-font {
