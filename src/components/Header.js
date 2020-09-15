@@ -43,8 +43,8 @@ export default class Header extends Component {
         className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
         id="mainNav"
       >
-        <div className="container">
-          <AnchorLink title={config.siteTitle} className="navbar-brand" to="/"  >
+        <div className="container-fluid">
+          <AnchorLink title={config.siteTitle} className="navbar-brand " to="/"  >
             <a onClick={() => this.toggleMenu(false)}>
               {config.siteTitle}
             </a>

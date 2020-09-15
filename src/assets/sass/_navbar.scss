@@ -6,7 +6,7 @@
     @include transition-all;
     @include heading-font;
     .navbar-brand {
-        font-size:30px;
+        font-size:40px;
         color: $theme-tertiary;
         @include logo-font;
         &:hover,
