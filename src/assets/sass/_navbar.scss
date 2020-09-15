@@ -1,22 +1,23 @@
 // Styling for the navbar
 #mainNav {
     border-color: fade-out($gray-darker, .95);
-    background-color: $theme-secondary;
+    background-color: white;
+    border-bottom: 5px solid $theme-secondary;
     @include transition-all;
     @include heading-font;
     .navbar-brand {
         font-size:30px;
-        color: $theme-primary;
+        color: $theme-tertiary;
         @include logo-font;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: darken($theme-secondary, 10%);
         }
     }
     .navbar-toggler {
         font-size: 20px;
         padding: 8px 10px;
-        color: $theme-primary-contrast;
+        color: $theme-tertiary;
     }
     .navbar-nav {
         > li {
@@ -25,16 +26,16 @@
                 font-weight: bold;
                 @include alt-font;
                 &.active {
-                    color: $theme-primary !important;
-                    background-color: $theme-secondary;
+                    color: $theme-tertiary !important;
+                    background-color: white;
                     &:hover {
-                        background-color: $theme-primary-contrast;
+                        background-color: $theme-primary;
                     }
                 }
             }
             > a,
             > a:focus {
-                color: $theme-primary-contrast;
+                color: $theme-tertiary;
                 &:hover {
                     color: $theme-primary;
                 }
@@ -42,36 +43,35 @@
         }
     }
     @media (min-width: 992px) {
-        border-color: $theme-secondary;
-        background-color: $theme-secondary;
+        background-color: white;
         .navbar-brand {
             &:hover,
             &:focus {
-                color: $theme-primary-contrast;
+                color: $theme-secondary;
             }
         }
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
-            color: $theme-primary-contrast;
+            color: $theme-tertiary;
             &:hover {
-                color: $theme-primary;
+                color: $theme-secondary;
             }
         }
         &.navbar-shrink {
             border-color: fade-out($gray-darker, .9);
-            background-color: $theme-secondary;
+            background-color: $theme-primary;
             .navbar-brand {
-                color: $theme-primary-contrast;
+                color: $theme-tertiary;
                 &:hover,
                 &:focus {
-                    color: $theme-primary;
+                    color: $theme-secondary;
                 }
             }
             .navbar-nav > li > a,
             .navbar-nav > li > a:focus {
-                color: $theme-primary-contrast;
+                color: $theme-tertiary;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-secondary;
                 }
             }
         }

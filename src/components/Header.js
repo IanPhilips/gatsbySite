@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import config from '../../config';
 // import Scroll from './Scroll';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { MDBBtn } from 'mdbreact';
+import Layout from './Layout';
 
 export default class Header extends Component {
   constructor(props) {
@@ -61,33 +63,39 @@ export default class Header extends Component {
           </button>
 
           <div
-            className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
+            className={` collapse navbar-collapse ${openMenu ? 'show' : ''}`}
             id="navbarResponsive"
           >
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
+            <ul className="navbar-nav my-auto ml-auto">
+              <li className="nav-item my-auto mx-2">
                 <AnchorLink title={"Benefits"} className="nav-link" to="/#benefits" >
-                <a onClick={() => this.toggleMenu(false)}>
+                <a onClick={() => this.toggleMenu(false)} >
                     Benefits
                 </a>
                   </AnchorLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item my-auto mx-2 ">
                 <AnchorLink title={"Features"} className="nav-link" to="/#features" >
                   <a onClick={() => this.toggleMenu(false)}>
                     Features
                   </a>
                 </AnchorLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item my-auto mx-2">
                   <a className="nav-link" href="/contact">
                     Contact
                   </a>
               </li>
+              <li className="nav-item">
+                <MDBBtn className={"text-white"} style={{lineHeight:"1.5"}} href={"/contact"}> JOIN OUR BETA </MDBBtn>
+              </li>
             </ul>
           </div>
+
         </div>
+
       </nav>
+
     );
   }
 }

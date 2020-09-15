@@ -1,15 +1,22 @@
 // Bootstrap overrides for this template
 .bg-primary {
     color:$theme-primary-contrast;
-    background: $theme-primary;
+    background: $theme-primary !important;;
     //background-color: $theme-primary !important;
-    background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
-    background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+    //background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
+    //background: linear-gradient($theme-primary, darken($theme-primary, 5%));
 }
 .bg-secondary{
-    background: $theme-secondary;
-    background: -webkit-linear-gradient($theme-secondary, darken($theme-secondary, 5%));
-    background: linear-gradient($theme-secondary, darken($theme-secondary, 5%));
+    background: $theme-secondary !important;
+    //background: -webkit-linear-gradient($theme-secondary, darken($theme-secondary, 5%));
+    //background: linear-gradient($theme-secondary, darken($theme-secondary, 5%));
+}
+.bg-tertiary{
+    background: $theme-tertiary !important;;
+    //background: -webkit-linear-gradient($theme-tertiary, darken($theme-tertiary, 5%));
+    //background: linear-gradient($theme-tertiary, darken($theme-tertiary, 5%));
+
+
 }
 
 .text-primary {
@@ -39,19 +46,21 @@
     &:focus,
     &:active,
     &.active {
-        box-shadow: 2px 2px 2px black;
-        color: black !important;
-        background: darken($theme-primary, 20) !important;
+        background: $theme-secondary !important;
     }
+}
+.btn-default{
+    background-color: $theme-primary!important;
 }
 
 .btn {
-    color:$theme-primary-contrast;
-    border-radius: 300px;
+    //color:$theme-primary-contrast;
+    font-size: 16pt !important;
+    border-radius: 7px;
+    padding: 11px 35px 8px 35px;
+    height: 52px;
     @include alt-font;
+    font-weight: bold !important;
+    min-width: 204px;
 }
 
-.btn-xl {
-    font-size: 11px;
-    padding: 15px 45px;
-}

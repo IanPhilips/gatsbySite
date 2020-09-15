@@ -7,6 +7,7 @@ body {
 
 body {
     @include body-font;
+    font-size: 18px;
 }
 
 
@@ -20,10 +21,10 @@ a {
 }
 
 hr {
-    max-width: 160px;
+    max-width: 250px;
     //margin: 25px auto 0;
     border-width: 2px;
-    border-color: $theme-primary;
+    border-color: $theme-secondary;
 }
 
 hr.light {
@@ -38,15 +39,25 @@ h5,
 h6 {
     @include heading-font;
     font-weight: bold;
-
 }
 h5, h3{
     font-weight:bold;
 }
-@media (min-width: 992px) {
-    h1 {
-        font-size: 50px;
-    }
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 36px;
+    color: $theme-tertiary;
+    font-weight: bold;
+}
+h3{
+    font-size: 28px;
+    color: $theme-tertiary;
+}
+h4{
+    font-size: 24px;
+    color: white;
 }
 
 p {
@@ -57,9 +68,6 @@ p {
 
 section {
     padding: 100px 0;
-    h2 {
-        font-size: 50px;
-    }
 }
 .bg-gray{
     background-color: rgb(245,245,245);
@@ -67,6 +75,6 @@ section {
 
 .bg-gray-slant {
     background-color: rgb(245,245,245);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }

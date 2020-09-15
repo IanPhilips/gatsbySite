@@ -14,7 +14,6 @@ import {
   MDBContainer,
   MDBModal,
   MDBModalFooter,
-  MDBModalHeader,
 } from 'mdbreact';
 
 class Contact extends Component{
@@ -56,7 +55,7 @@ class Contact extends Component{
             <div className="header-content text-white mx-auto"
                  style={{
                    left:"50vh",
-                   marginTop:"15vh",
+                   marginTop:"17vh",
                  }}
             >
               <h1 className={"text-center m-5"}>
@@ -81,7 +80,7 @@ class Contact extends Component{
               {/*PHONE*/}
               <div className={"row"}>
                 <label htmlFor={"phone"} className={"col-2 col-lg-3 m-3 my-1"}> Phone </label>
-                <input className={"mt-3 col-lg-6 col-8 "} type="text" id={"phone"}
+                <input className={"mt-3 col-lg-6 col-8"} type="text" id={"phone"}
                        placeholder={""} name="phone"
                        style={{borderRadius:"5px", borderWidth:"1.5px"}}/>
                 <div className={"col-lg-2"}/>
@@ -129,7 +128,7 @@ class Contact extends Component{
               {/*SUBMIT*/}
               <div className={"col-lg-12 text-center"}>
               <input type="submit" onClick={ ()=>this.toggle()} value="Submit"
-                     className="btn-default btn btn-xl mt-3"
+                     className="btn-default btn text-white mt-3"
                      style={{width:"200px"}}
               />
               </div>
@@ -138,16 +137,15 @@ class Contact extends Component{
         </MDBAnimation>
         <MDBContainer>
           <MDBModal isOpen={this.state.modal} toggle={()=>this.toggle()}>
-            <MDBModalHeader> Thanks!  We'll be in touch.</MDBModalHeader>
-
-            <MDBModalFooter className={"align-content-center justify-content-center bg-primary"}>
-              <MDBBtn className={"btn btn-outline btn-xl mt-3"} color={"tr"} onClick={()=>this.toggle()}>Close</MDBBtn>
+            <h5 className={"m-4 text-center"}> Thanks!  We'll be in touch.</h5>
+            <MDBModalFooter className={"align-content-center justify-content-center "}>
+              <MDBBtn className={"mt-3 text-white"}  onClick={()=>this.toggle()}>Close</MDBBtn>
             </MDBModalFooter>
           </MDBModal>
         </MDBContainer>
-        <section className="contact bg-secondary" id="contact" style={{padding:"22px"}}>
+        <section className="contact bg-primary" id="contact" style={{padding:"3px"}}>
         </section>
-        <Footer />
+        <Footer/>
       </Layout>
 
     );
@@ -155,13 +153,13 @@ class Contact extends Component{
   sendEmail(e) {
     e.preventDefault();
     console.log("email sent")
-    // emailjs.sendForm('gmail', 'template_jjrY3GEB', e.target,
-    //   'user_cV1OsELmIYfBvcQFwMZHH')
-    //   .then((result) => {
-    //     console.log(result.text);
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
+    emailjs.sendForm('gmail', 'template_jjrY3GEB', e.target,
+      'user_cV1OsELmIYfBvcQFwMZHH')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
   }
 }
 export default Contact;

@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'BLUTERRA', // <title>
+  siteTitle: 'orrbital', // <title>
   manifestName: 'SS',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',

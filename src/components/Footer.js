@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="container text-left">
         <br/> <br/>
 
-        <h3> Let's Chat. </h3>
+        <h4> Let's Chat. </h4>
         <br/> <br/>
 
-        <p> contact@bluterrasystems.com </p>
+        <p> contact@orrbital.com </p>
         <br/>
 
         <p> +1 303.842.8550 </p>
