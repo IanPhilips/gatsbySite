@@ -144,7 +144,7 @@ class IndexPage extends Component{
     </section>
 
     <section className="features " id="features">
-      <div className="container">
+      <div className="container-fluid " style={{paddingRight:"100px", paddingLeft:"100px"}}>
         <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
 
         <div className="section-heading text-center">
