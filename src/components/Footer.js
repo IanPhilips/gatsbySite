@@ -10,10 +10,10 @@ export default function Footer() {
         <h4> Let's Chat. </h4>
         <br/> <br/>
 
-        <p> contact@orrbital.com </p>
+        <p> contact@bluterra.io </p>
         <br/>
 
-        <p> +1 303.842.8550 </p>
+        <p> +1 720.675.9293 </p>
         <br/>
 
         <p> Boulder, CO 80302 </p>

@@ -161,9 +161,9 @@ class IndexPage extends Component{
             <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
               <h5> Your Facility at a Glance</h5>
               <hr align={"left"} className={"align-content-left justify-content-left mb-4"}/>
-              <p> - Easily view trends of material, contamination, and tonnage in order to better plan and mange your facility </p>
-              <p> - Quickly sort and view inbound partners by several metrics, letting you to focus on the most important ones </p>
-              <p> - Find and identify areas for opportunity and growth </p>
+              <p> Easily view trends of material, contamination, and tonnage in order to better plan and mange your facility </p>
+              <p> Quickly sort and view inbound partners by several metrics, letting you to focus on the most important ones </p>
+              <p> Find and identify areas for opportunity and growth </p>
             </MDBAnimation>
           </div>
         </div>
@@ -172,9 +172,9 @@ class IndexPage extends Component{
             <MDBAnimation type={"slideInLeft"} duration={"1s"} reveal={"true"} >
               <h5> Partner-Specific Data </h5>
               <hr align={"left"} className={"align-content-left justify-content-left  mb-4"}/>
-              <p> - Always maintain a view into how an individual company or paratner is impacting your bottom line </p>
-              <p> - Track important metrics for each partner, like contamination, in order to effectively invoice </p>
-              <p> - View a log of each inbound load as well as the overall trend of a partner’s performance over time </p>
+              <p> Always maintain a view into how an individual company or paratner is impacting your bottom line </p>
+              <p> Track important metrics for each partner, like contamination, in order to effectively invoice </p>
+              <p> View a log of each inbound load as well as the overall trend of a partner’s performance over time </p>
             </MDBAnimation>
           </div>
           <div className="col-lg-8 order-first order-lg-last">
@@ -196,7 +196,7 @@ class IndexPage extends Component{
       <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >
       <div className="container row col-lg-12">
         <div className={"col-lg-8 my-auto text-white"} >
-          <h6 className={"m-0 text-right"}> Ready to have adaptable, intelligent systems work for you? Contact us to learn more. </h6>
+          <h6 className={"m-0 text-right"}> Ready to have adaptable, intelligent systems work for you? </h6>
         </div>
         <div className={"col-lg-4"}>
           <MDBBtn href={"/contact"} className={"text-white mr-auto"}>
