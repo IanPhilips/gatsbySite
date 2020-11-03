@@ -1,5 +1,5 @@
-import React from "react"
-import { graphql } from "gatsby"
+const graphql = require( "gatsby");
+const React = require( "react");
 
 export default function Template({
                                    data, // this prop will be injected by the GraphQL query below.
