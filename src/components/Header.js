@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
-// import Scroll from './Scroll';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { MDBBtn } from 'mdbreact';
-import Layout from './Layout';
 
 export default class Header extends Component {
   constructor(props) {
@@ -16,25 +14,26 @@ export default class Header extends Component {
   toggleMenu = value => {
     this.setState({ openMenu: value });
   };
+  componentDidMount() {
 
-  // handleScroll = () => {
-  //   const { visibilityClass } = this.state;
-  //   if (window.pageYOffset > 300) {
-  //     if (visibilityClass !== 'navbar-shrink') {
-  //       this.setState({ visibilityClass: 'navbar-shrink' });
-  //     }
-  //   } else {
-  //     if (visibilityClass === 'navbar-shrink') {
-  //       this.setState({ visibilityClass: '' });
-  //     }
-  //   }
-  // };
-  // componentDidMount() {
-  //   window.addEventListener('scroll', this.handleScroll);
-  // }
-  // componentWillUnmount() {
-  //   window.removeEventListener('scroll', this.handleScroll);
-  // }
+    // hotjar
+      (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2043647,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')
+      //google analytics
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments)}
+      gtag('js', new Date());
+      gtag('config', 'G-YPC306R5M1');
+
+  }
+
+
 
   render() {
     const { openMenu, visibilityClass } = this.state;
@@ -93,6 +92,7 @@ export default class Header extends Component {
           </div>
 
         </div>
+
 
       </nav>
 

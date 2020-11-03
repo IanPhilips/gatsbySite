@@ -10,7 +10,7 @@ export default function HTML(props) {
         <script type="text/javascript">
           {(function(){init("user_cV1OsELmIYfBvcQFwMZHH")})()}
         </script>
-
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPC306R5M1"></script>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta

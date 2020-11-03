@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-// import Scroll from '../components/Scroll';
 import Footer from '../components/Footer';
 
 import down from "../assets/img/icon_processingcosts.png";
-// import recyc from "../assets/img/recyc.jpeg";
 import meter from "../assets/img/icon_efficiency.png";
 import trash from "../assets/img/icon_contamination.png";
 import up from "../assets/img/icon_increaserevenue.png";
