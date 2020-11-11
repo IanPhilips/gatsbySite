@@ -15,8 +15,6 @@
     background: $theme-tertiary !important;;
     //background: -webkit-linear-gradient($theme-tertiary, darken($theme-tertiary, 5%));
     //background: linear-gradient($theme-tertiary, darken($theme-tertiary, 5%));
-
-
 }
 
 .text-primary {
@@ -52,11 +50,14 @@
 .btn-default{
     background-color: $theme-primary!important;
 }
+.btn-tertiary{
+    background-color: $theme-tertiary!important;
+}
 
 .btn {
     //color:$theme-primary-contrast;
     font-size: 16pt !important;
-    border-radius: 7px;
+    border-radius: 25px;
     padding: 11px 35px 8px 35px;
     height: 52px;
     @include alt-font;

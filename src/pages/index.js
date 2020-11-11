@@ -8,8 +8,9 @@ import down from "../assets/img/icon_processingcosts.png";
 import meter from "../assets/img/icon_efficiency.png";
 import trash from "../assets/img/icon_contamination.png";
 import up from "../assets/img/icon_increaserevenue.png";
-import dashboard1 from "../assets/images/dashboard_mainoverview.png";
-import dashboard2 from "../assets/images/dashboard_inboundpartner.png";
+import dashboard1 from "../assets/images/Bluterra_Dashboard_Overview.png";
+import dashboard2 from "../assets/images/Bluterra_Dashboard_PartnerDetail.png";
+import nasa from "../assets/images/nasa.jpg";
 import vid from "../assets/videos/JumboShortMRF.mp4";
 
 import {
@@ -26,14 +27,8 @@ class IndexPage extends Component{
     <Header />
 
     <header className="masthead">
-            <video autoPlay={"autoplay"} loop={"loop"} muted className={"video"}
-            style={{
-              height:"100%",
-              width:"100%",
-              objectFit:"cover"
-            }}>
-              <source src={vid} type={"video/mp4"}/>
-            </video>
+
+      <img src={nasa} alt={"earth"} style={{ height: "100%", width: "100%", objectFit: "cover" }}/>
 
       <div  style={{
         position:"absolute",
@@ -43,35 +38,51 @@ class IndexPage extends Component{
         width:"100%",
         objectFit:"cover"
       }}>
-      <div className="header-content mx-auto"
-           style={{
-             marginTop:"30vh",
-           }}
-           >
-        <h1 className={"text-left ml-5 my-5"} style={{maxWidth:"800px"}}>
-         Applied Intelligent Systems For Your Material Recovery Facility
+
+      <div className="header-content" style={{ marginTop:"30vh"}}>
+        <h1 className={"my-5"} >
+          Imagine a world without waste.
         </h1>
-        <h4 className={"ml-5 my-5 text-left"} style={{maxWidth:"700px"}}>
-          Real-time data to reduce processing
-          costs, track contamination, and drive operational efficiency.
+        <h4 className={"my-5"} >
+          FROM CONSUMER TO MATERIAL RECOVERY FACILITY, OUR
+          AI-POWERED SOFTWARE IS RESHAPING RECYCLING.
         </h4>
-        {/*<Scroll type="id" element="contact">*/}
-        <div className={"text-left ml-5"}>
           <MDBBtn href={"/contact"} >
-            JOIN OUR BETA
+            SIGNUP FOR OUR BETA
           </MDBBtn>
-        </div>
-        {/*</Scroll>*/}
       </div>
       </div>
     </header>
 
+    <section className="features" id="video">
+      <div className="container-fluid" style={{paddingRight:"50px", paddingLeft:"50px"}}>
+        <div className="row">
+        <div className=" text-center col-12 col-md-6 ">
+          <h3> Live Actionable Data About Your Inbound Material</h3>
+          <p className={"mt-5"}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p className={"mt-5"}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+          <div className={"col-12 col-md-6"}>
+            <video autoPlay={"autoplay"} loop={"loop"} muted className={"video img-fluid"}
+            style={{height:"100%"}}>
+              <source src={vid} type={"video/mp4"}/>
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <section className="features bg-gray-slant" id="benefits">
       <div className="container-fluid">
         <div className="section-heading text-center ">
-          <h2>Actionable data to optimize your operations</h2>
+          <h2>AI Software Benefits</h2>
         </div>
         <div className="row">
           <div className="col-lg-12 my-auto">
@@ -146,7 +157,7 @@ class IndexPage extends Component{
         <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
 
         <div className="section-heading text-center">
-          <h3>Maintain a pulse on your material stream, all in one place</h3>
+          <h3>Configurable Data Puts You in Control</h3>
         </div>
         </MDBAnimation>
         <div className="row">
@@ -187,22 +198,19 @@ class IndexPage extends Component{
     </section>
 
 
-    {/*<img src={recyc} alt={"recycling"} style={{width:"100%", height:"400px", objectFit:"cover"}} />*/}
 
-    <section className="bg-tertiary" id="contact" style={{padding:"10px"}}>
+    <section className="bg-gray" id="contact" style={{padding:"10px"}}>
 
-      <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >
-      <div className="container row col-lg-12">
-        <div className={"col-lg-8 my-auto text-white"} >
-          <h6 className={"m-0 text-right"}> Ready to have adaptable, intelligent systems work for you? </h6>
-        </div>
-        <div className={"col-lg-4"}>
-          <MDBBtn href={"/contact"} className={"text-white mr-auto"}>
+      {/*<MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >*/}
+      <div className={"row d-flex justify-content-center align-content-center "}>
+        <div className="row px-5">
+          <b className={"my-auto mr-4"}> Ready to have adaptable, intelligent systems work for you? </b>
+          <MDBBtn href={"/contact"} className={"text-white mr-auto btn-tertiary"}>
             JOIN OUR BETA
           </MDBBtn>
         </div>
       </div>
-      </MDBAnimation>
+      {/*</MDBAnimation>*/}
 
     </section>
     <section className="contact bg-secondary" id="contactline" style={{padding:"2px"}}>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { MDBBtn } from 'mdbreact';
+import logo from "../assets/images/Bluterra_Logo_Recycling_Blue.png";
 
 export default class Header extends Component {
   constructor(props) {
@@ -44,9 +44,7 @@ export default class Header extends Component {
       >
         <div className="container-fluid">
           <AnchorLink title={config.siteTitle} className="navbar-brand " to="/"  >
-            <a onClick={() => this.toggleMenu(false)}>
-              {config.siteTitle}
-            </a>
+            <img src={logo} alt={"logo"} onClick={() => this.toggleMenu(false)}/>
           </AnchorLink>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
@@ -65,7 +63,7 @@ export default class Header extends Component {
             className={` collapse navbar-collapse ${openMenu ? 'show' : ''}`}
             id="navbarResponsive"
           >
-            <ul className="navbar-nav my-auto ml-auto">
+            <ul className="navbar-nav my-auto mr-auto">
               <li className="nav-item my-auto mx-2">
                 <AnchorLink title={"Benefits"} className="nav-link" to="/#benefits" >
                 <a onClick={() => this.toggleMenu(false)} >
@@ -85,9 +83,9 @@ export default class Header extends Component {
                     Contact
                   </a>
               </li>
-              <li className="nav-item">
-                <MDBBtn className={"text-white"} style={{lineHeight:"1.5"}} href={"/contact"}> JOIN OUR BETA </MDBBtn>
-              </li>
+              {/*<li className="nav-item">*/}
+              {/*  <MDBBtn className={"text-white"} style={{lineHeight:"1.5"}} href={"/contact"}> JOIN OUR BETA </MDBBtn>*/}
+              {/*</li>*/}
             </ul>
           </div>
 

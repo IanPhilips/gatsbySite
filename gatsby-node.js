@@ -2,7 +2,9 @@
  * Implement Gatsby's Node APIs in this file.
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
+ *
  */
+// from: https://www.gatsbyjs.com/docs/adding-markdown-pages/
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;

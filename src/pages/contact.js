@@ -128,7 +128,7 @@ class Contact extends Component{
               {/*SUBMIT*/}
               <div className={"col-lg-12 text-center"}>
               <input type="submit" onClick={ ()=>this.toggle()} value="Submit"
-                     className="btn-default btn text-white mt-3"
+                     className="btn-default btn text-white mt-3 btn-tertiary"
                      style={{width:"200px"}}
               />
               </div>
@@ -139,7 +139,7 @@ class Contact extends Component{
           <MDBModal isOpen={this.state.modal} toggle={()=>this.toggle()}>
             <h5 className={"m-4 text-center"}> Thanks!  We'll be in touch.</h5>
             <MDBModalFooter className={"align-content-center justify-content-center "}>
-              <MDBBtn className={"mt-3 text-white"}  onClick={()=>this.toggle()}>Close</MDBBtn>
+              <MDBBtn className={"mt-3 text-white btn-tertiary"}  onClick={()=>this.toggle()}>Close</MDBBtn>
             </MDBModalFooter>
           </MDBModal>
         </MDBContainer>
@@ -152,7 +152,7 @@ class Contact extends Component{
   }
   sendEmail(e) {
     e.preventDefault();
-    console.log("email sent")
+    console.log("email sent");
     emailjs.sendForm('gmail', 'template_jjrY3GEB', e.target,
       'user_cV1OsELmIYfBvcQFwMZHH')
       .then((result) => {

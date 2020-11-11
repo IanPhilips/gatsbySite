@@ -1,6 +1,4 @@
-// const graphql = require( "gatsby");
-// const React = require( "react");
-
+// from: https://www.gatsbyjs.com/docs/adding-markdown-pages/
 import React from "react"
 import { graphql } from "gatsby"
 
