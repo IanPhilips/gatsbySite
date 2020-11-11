@@ -69,8 +69,7 @@ class IndexPage extends Component{
           </p>
         </div>
           <div className={"col-12 col-md-6"}>
-            <video autoPlay={"autoplay"} loop={"loop"} muted className={"video img-fluid"}
-            style={{height:"100%"}}>
+            <video autoPlay={"autoplay"} loop={"loop"} muted className={"video img-fluid"}>
               <source src={vid} type={"video/mp4"}/>
             </video>
           </div>
