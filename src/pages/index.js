@@ -54,7 +54,7 @@ class IndexPage extends Component{
       </div>
     </header>
 
-    <section className="features" id="video">
+    <section className="about" id="video">
       <div className="container" >
         <div className="row">
         <div className=" text-center col-12 col-md-6 ">
