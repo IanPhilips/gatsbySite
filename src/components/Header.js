@@ -44,7 +44,8 @@ export default class Header extends Component {
       >
         <div className="container-fluid">
           <AnchorLink title={config.siteTitle} className="navbar-brand " to="/"  >
-            <img src={logo} alt={"logo"} onClick={() => this.toggleMenu(false)}/>
+            <img src={logo} alt={"logo"}
+                 onClick={() => this.toggleMenu(false)} onKeyDown={() => this.toggleMenu(false)}/>
           </AnchorLink>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
@@ -66,21 +67,21 @@ export default class Header extends Component {
             <ul className="navbar-nav my-auto mr-auto">
               <li className="nav-item my-auto mx-2">
                 <AnchorLink title={"Benefits"} className="nav-link" to="/#benefits" >
-                <a onClick={() => this.toggleMenu(false)} >
+                <b tabIndex={0} role="button" onClick={() => this.toggleMenu(false)} onKeyDown={() => this.toggleMenu(false)} >
                     Benefits
-                </a>
+                </b>
                   </AnchorLink>
               </li>
               <li className="nav-item my-auto mx-2 ">
                 <AnchorLink title={"Features"} className="nav-link" to="/#features" >
-                  <a onClick={() => this.toggleMenu(false)}>
+                  <b tabIndex={0} role="button" onClick={() => this.toggleMenu(false) } onKeyDown={() => this.toggleMenu(false)}>
                     Features
-                  </a>
+                  </b>
                 </AnchorLink>
               </li>
               <li className="nav-item my-auto mx-2">
-                  <a className="nav-link" href="/contact">
-                    Contact
+                  <a  className="nav-link" href="/contact">
+                    <b role="button" tabIndex={0}>Contact</b>
                   </a>
               </li>
               {/*<li className="nav-item">*/}

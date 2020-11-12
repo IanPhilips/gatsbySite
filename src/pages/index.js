@@ -39,7 +39,7 @@ class IndexPage extends Component{
         objectFit:"cover"
       }}>
 
-      <div className="header-content" style={{ marginTop:"30vh"}}>
+      <div className="header-content" style={{ marginTop:"40vh"}}>
         <h1 className={"my-5"} >
           Imagine a world without waste.
         </h1>
@@ -55,7 +55,7 @@ class IndexPage extends Component{
     </header>
 
     <section className="features" id="video">
-      <div className="container-fluid" style={{paddingRight:"50px", paddingLeft:"50px"}}>
+      <div className="container" >
         <div className="row">
         <div className=" text-center col-12 col-md-6 ">
           <h3> Live Actionable Data About Your Inbound Material</h3>
@@ -78,21 +78,21 @@ class IndexPage extends Component{
     </section>
 
 
-    <section className="features bg-gray-slant" id="benefits">
+    <section className="benefits bg-gray-slant" id="benefits">
       <div className="container-fluid">
         <div className="section-heading text-center ">
           <h2>AI Software Benefits</h2>
         </div>
         <div className="row">
           <div className="col-lg-12 my-auto">
-            <div className="container-fluid ">
+            <div className="container" >
               <div className="row ">
 
                 <div className="col-lg-3">
                 <MDBAnimation type={"fadeIn"} duration={"1s"} delay={"0.25s"} reveal={"true"}>
                   <div className="feature-item">
                     <img className={"mb-4 align-content-center justify-content-center"}
-                         src={down} alt={""} style={{height:"125px"}}
+                         src={down} alt={""}
                     />
                     <h5>Reduce Processing Costs</h5>
                     <p className="mt-4">
@@ -106,7 +106,7 @@ class IndexPage extends Component{
 
                   <div className="feature-item">
                     <img className={"mb-4 align-content-center justify-content-center"}
-                         src={trash} alt={""} style={{height:"125px"}}
+                         src={trash} alt={""}
                     />
                     <h5>Track Contamination</h5>
                     <p className=" mt-4">
@@ -120,7 +120,7 @@ class IndexPage extends Component{
                   <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} delay={"1s"}>
                   <div className="feature-item">
                     <img className={"mb-4 align-content-center justify-content-center"}
-                         src={up} alt={""} style={{height:"125px"}}
+                         src={up} alt={""}
                     />
                     <h5>Increase Revenue</h5>
                     <p className=" mt-4">
@@ -135,7 +135,7 @@ class IndexPage extends Component{
 
                     <div className="feature-item">
                       <img className={"mb-4 align-content-center justify-content-center"}
-                           src={meter} alt={""} style={{height:"125px"}}
+                           src={meter} alt={""}
                       />
                       <h5>Increase Efficiency</h5>
                       <p className=" mt-4">
@@ -152,7 +152,7 @@ class IndexPage extends Component{
     </section>
 
     <section className="features " id="features">
-      <div className="container-fluid " style={{paddingRight:"100px", paddingLeft:"100px"}}>
+      <div className="container " >
         <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
 
         <div className="section-heading text-center">

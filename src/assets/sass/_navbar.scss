@@ -24,7 +24,7 @@
     }
     .navbar-nav {
         > li {
-            > a {
+            > p {
                 font-size: 11px;
                 font-weight: bold;
                 @include alt-font;
@@ -36,8 +36,8 @@
                     }
                 }
             }
-            > a,
-            > a:focus {
+            > p,
+            > p:focus {
                 color: $theme-tertiary;
                 &:hover {
                     color: $theme-primary;
@@ -53,8 +53,8 @@
                 color: $theme-secondary;
             }
         }
-        .navbar-nav > li > a,
-        .navbar-nav > li > a:focus {
+        .navbar-nav > li > p,
+        .navbar-nav > li > p:focus {
             color: $theme-tertiary;
             &:hover {
                 color: $theme-secondary;
@@ -70,8 +70,8 @@
                     color: $theme-secondary;
                 }
             }
-            .navbar-nav > li > a,
-            .navbar-nav > li > a:focus {
+            .navbar-nav > li > p,
+            .navbar-nav > li > p:focus {
                 color: $theme-tertiary;
                 &:hover {
                     color: $theme-secondary;
