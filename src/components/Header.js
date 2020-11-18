@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import logo from "../assets/images/Bluterra_Logo_Recycling_Blue.png";
+import logo from "../assets/images/Bluterra_Logo_4x.png";
 
 export default class Header extends Component {
   constructor(props) {
