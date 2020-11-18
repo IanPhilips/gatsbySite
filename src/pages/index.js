@@ -58,14 +58,12 @@ class IndexPage extends Component{
       <div className="container" >
         <div className="row">
         <div className=" text-center col-12 col-md-6 ">
-          <h3> Live Actionable Data About Your Inbound Material</h3>
+          <h3> Say Goodbye to the Trash Can </h3>
           <p className={"mt-5"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+          Bluterra is working to accelerate the world's transition to a circular economy by helping divert material away from our landfills and back into our economy.
           </p>
           <p className={"mt-5"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+          Our products leverage Artificial Intelligence to drive revolutionary efficiencies in Material Recovery Facilities and educate consumers through mobile app and vehicle-based software solutions, leading to cleaner and more robust recycling streams.
           </p>
         </div>
           <div className={"col-12 col-md-6"}>
@@ -81,7 +79,7 @@ class IndexPage extends Component{
     <section className="benefits bg-gray-slant" id="benefits">
       <div className="container-fluid">
         <div className="section-heading text-center ">
-          <h2>AI Software Benefits</h2>
+          <h2>Actionable Data About Your Inbound Material</h2>
         </div>
         <div className="row">
           <div className="col-lg-12 my-auto">
