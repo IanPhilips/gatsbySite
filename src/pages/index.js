@@ -48,7 +48,7 @@ class IndexPage extends Component{
           AI-POWERED SOFTWARE IS RESHAPING RECYCLING.
         </h4>
           <MDBBtn href={"/contact"} >
-            SIGNUP FOR OUR BETA
+            LEARN MORE
           </MDBBtn>
       </div>
       </div>
@@ -205,7 +205,7 @@ class IndexPage extends Component{
         <div className="row px-5">
           <b className={"my-auto mr-4"}> Ready to have adaptable, intelligent systems work for you? </b>
           <MDBBtn href={"/contact"} className={"text-white mr-auto btn-tertiary"}>
-            JOIN OUR BETA
+            LEARN MORE
           </MDBBtn>
         </div>
       </div>
