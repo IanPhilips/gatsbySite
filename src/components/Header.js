@@ -44,7 +44,7 @@ export default class Header extends Component {
       >
         <div className="container-fluid">
           <AnchorLink title={config.siteTitle} className="navbar-brand " to="/"  >
-            <img src={logo} alt={"logo"} width={250}
+            <img src={logo} alt={"logo"} width={220}
                  onClick={() => this.toggleMenu(false)} onKeyDown={() => this.toggleMenu(false)}/>
           </AnchorLink>
           <button
