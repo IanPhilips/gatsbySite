@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import logo from "../assets/images/Bluterra_Logo_Recycling_Blue.png";
+import logo from "../assets/images/Bluterra_Logo_4x.png";
 
 export default class Header extends Component {
   constructor(props) {
@@ -44,7 +44,7 @@ export default class Header extends Component {
       >
         <div className="container-fluid">
           <AnchorLink title={config.siteTitle} className="navbar-brand " to="/"  >
-            <img src={logo} alt={"logo"}
+            <img src={logo} alt={"logo"} width={220}
                  onClick={() => this.toggleMenu(false)} onKeyDown={() => this.toggleMenu(false)}/>
           </AnchorLink>
           <button
