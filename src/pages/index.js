@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Typed from 'typed.js';
 
 import down from "../assets/img/icon_processingcosts.png";
 import meter from "../assets/img/icon_efficiency.png";
@@ -18,8 +19,16 @@ import {
   MDBBtn,
 } from 'mdbreact';
 
+
+let typed = null;
 class IndexPage extends Component{
 
+  componentDidMount() {
+    typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+      loop:true, startDelay:3000, backDelay: 3000, typeSpeed:50, backSpeed: 50
+    });
+  }
 
   render(){
   return(
@@ -27,28 +36,28 @@ class IndexPage extends Component{
     <Header />
 
     <header className="masthead">
-
       <img src={nasa} alt={"earth"} style={{ height: "100%", width: "100%", objectFit: "cover" }}/>
+      <div  style={{ position:"absolute", top:0, background: "rgba(100,100,100,.3)", height:"100%", width:"100%", objectFit:"cover" }}>
 
-      <div  style={{
-        position:"absolute",
-        top:0,
-        background: "rgba(100,100,100,.3)",
-        height:"100%",
-        width:"100%",
-        objectFit:"cover"
-      }}>
+      <div className="header-content" >
+        <h1 className={"my-2 mx-auto typed-header"} >
+            Imagine a world <b> </b>
+          <div id="typed-strings">
+            <p> without waste.</p>
+            <p> without landfills.</p>
+            <p> that's sustainable.</p>
+          </div>
+          {/*NECESSARY:*/}
+          <span id="typed"></span>
 
-      <div className="header-content" style={{ marginTop:"40vh"}}>
-        <h1 className={"my-5"} >
-          Imagine a world without waste.
+
         </h1>
-        <h4 className={"my-5"} >
+        <h4 className={"mb-5"} >
           FROM CONSUMER TO MATERIAL RECOVERY FACILITY, OUR
           AI-POWERED SOFTWARE IS RESHAPING RECYCLING.
         </h4>
           <MDBBtn href={"/contact"} >
-            SIGNUP FOR OUR BETA
+            LEARN MORE
           </MDBBtn>
       </div>
       </div>
@@ -58,14 +67,12 @@ class IndexPage extends Component{
       <div className="container" >
         <div className="row">
         <div className=" text-center col-12 col-md-6 ">
-          <h3> Live Actionable Data About Your Inbound Material</h3>
-          <p className={"mt-5"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+          <h3>Say Goodbye to the Trash Can</h3>
+          <p className={"mt-4"}>
+            Bluterra is working to accelerate the world's transition to a circular economy by helping divert material away from our landfills and back into our economy.
           </p>
-          <p className={"mt-5"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+          <p className={"mt-4"}>
+            Our products leverage Artificial Intelligence to drive revolutionary efficiencies in Material Recovery Facilities and educate consumers through mobile app and vehicle-based software solutions, leading to cleaner and more robust recycling streams.
           </p>
         </div>
           <div className={"col-12 col-md-6"}>
@@ -81,7 +88,7 @@ class IndexPage extends Component{
     <section className="benefits bg-gray-slant" id="benefits">
       <div className="container-fluid">
         <div className="section-heading text-center ">
-          <h2>AI Software Benefits</h2>
+          <h2>Actionable Data About Your Inbound Material</h2>
         </div>
         <div className="row">
           <div className="col-lg-12 my-auto">
@@ -152,7 +159,7 @@ class IndexPage extends Component{
     </section>
 
     <section className="features " id="features">
-      <div className="container " >
+      <div className="container" >
         <MDBAnimation type={"slideInRight"} duration={"1s"} reveal={"true"} >
 
         <div className="section-heading text-center">
@@ -205,7 +212,7 @@ class IndexPage extends Component{
         <div className="row px-5">
           <b className={"my-auto mr-4"}> Ready to have adaptable, intelligent systems work for you? </b>
           <MDBBtn href={"/contact"} className={"text-white mr-auto btn-tertiary"}>
-            JOIN OUR BETA
+            LEARN MORE
           </MDBBtn>
         </div>
       </div>
