@@ -34,37 +34,17 @@ class Contact extends Component{
     return(
       <Layout>
         <Header />
-          <img  className={"video"}
-                src={bg}
-                alt={""}
-                 style={{
-                   height:"30vh",
-                   width:"100vw",
-                   objectFit:"cover"
-                 }}>
-          </img>
-
-          <div  style={{
-            position:"absolute",
-            top:0,
-            background: "rgba(190,190,190,.3)",
-            height:"30vh",
-            width:"100vw",
-            objectFit:"cover"
-          }}>
-            <div className="header-content text-white mx-auto"
-                 style={{
-                   left:"50vh",
-                   marginTop:"17vh",
-                 }}
-            >
-              <h1 className={"text-center m-5"}>
-                Get In Touch
-              </h1>
-              <h3 className={"m-5 text-center"}> </h3>
-
+        {/*hero div*/}
+        <div style={{ position:"relative"}}>
+          {/*background image*/}
+          <img  className={"video"} src={bg} alt={""} style={{ height:"30vh", width:"100vw", objectFit:"cover" }}></img>
+          {/*title div*/}
+          <div  style={{ position:"absolute", top:0, background: "rgba(190,190,190,.3)", height:"30vh", width:"100vw", objectFit:"cover" }}>
+            <div className="header-content text-white mx-auto" style={{ left:"50vh", marginTop:"17vh", }}>
+              <h1 className={"text-center m-5"}> Get In Touch </h1>
             </div>
           </div>
+        </div>
 
         <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >
           <div className="container mt-5 mb-5">
