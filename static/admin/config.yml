@@ -12,6 +12,7 @@ collections:
     create: true
     fields:
       - { name: slug, label: Path }
+      - { name: photo, label: Header Image, widget: image}
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }

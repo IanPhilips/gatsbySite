@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import config from '../../config';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import logo from "../assets/images/Bluterra_Logo_4x.png";
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import { navigate } from '../../.cache/gatsby-browser-entry';
 
 export default class Header extends Component {
   constructor(props) {
@@ -33,6 +34,15 @@ export default class Header extends Component {
 
   }
 
+  async handleNavLinkClick(path){
+    this.toggleMenu(false);
+    if (!window.location.href.endsWith(path)) {
+      await navigate("/" + path);
+    }
+    scrollTo(path);
+    document.getElementById(path).blur();
+    }
+
 
 
   render() {
@@ -43,10 +53,11 @@ export default class Header extends Component {
         id="mainNav"
       >
         <div className="container-fluid">
-          <AnchorLink title={config.siteTitle} className="navbar-brand " to="/"  >
+          <a title={config.siteTitle} className="navbar-brand " href="/"  >
             <img src={logo} alt={"logo"} width={220}
-                 onClick={() => this.toggleMenu(false)} onKeyDown={() => this.toggleMenu(false)}/>
-          </AnchorLink>
+                 onClick={() =>     this.toggleMenu(false)}
+                 onKeyDown={() =>    this.toggleMenu(false)}/>
+          </a>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
@@ -66,18 +77,16 @@ export default class Header extends Component {
           >
             <ul className="navbar-nav my-auto mr-auto">
               <li className="nav-item my-auto mx-2">
-                <AnchorLink title={"Benefits"} className="nav-link" to="/#benefits" >
-                <b tabIndex={0} role="button" onClick={() => this.toggleMenu(false)} onKeyDown={() => this.toggleMenu(false)} >
+                <b tabIndex={0} role="button" className="nav-link" id={"#benefits"}
+                   onClick={() => this.handleNavLinkClick("#benefits")} onKeyDown={() => this.handleNavLinkClick("#benefits")} >
                     Benefits
                 </b>
-                  </AnchorLink>
               </li>
               <li className="nav-item my-auto mx-2 ">
-                <AnchorLink title={"Features"} className="nav-link" to="/#features" >
-                  <b tabIndex={0} role="button" onClick={() => this.toggleMenu(false) } onKeyDown={() => this.toggleMenu(false)}>
+                  <b tabIndex={0} role="button" id={"#features"} className="nav-link"
+                     onClick={() => this.handleNavLinkClick("#features") } onKeyDown={() => this.handleNavLinkClick("#features")}>
                     Features
                   </b>
-                </AnchorLink>
               </li>
               <li className="nav-item my-auto mx-2">
                   <a  className="nav-link" href="/contact">

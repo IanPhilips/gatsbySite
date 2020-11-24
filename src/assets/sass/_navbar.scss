@@ -5,6 +5,7 @@
     border-bottom: 5px solid $theme-secondary;
     .nav-item{
         text-transform: uppercase;
+        cursor: pointer;
     }
     @include transition-all;
     @include heading-font;

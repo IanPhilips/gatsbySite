@@ -20,6 +20,7 @@ import {
 } from 'mdbreact';
 
 
+// eslint-disable-next-line no-unused-vars
 let typed = null;
 class IndexPage extends Component{
 
