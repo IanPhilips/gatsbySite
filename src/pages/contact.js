@@ -9,12 +9,12 @@ import bg from "../assets/img/singapore.webp";
 
 import emailjs from 'emailjs-com';
 import {
-  MDBAnimation,
   MDBBtn,
   MDBContainer,
   MDBModal,
   MDBModalFooter,
 } from 'mdbreact';
+import { Fade } from 'react-awesome-reveal';
 
 class Contact extends Component{
 
@@ -46,7 +46,7 @@ class Contact extends Component{
           </div>
         </div>
 
-        <MDBAnimation type={"fadeIn"} duration={"1s"} reveal={"true"} >
+        <Fade triggerOnce delay={0} >
           <div className="container mt-5 mb-5">
             <form className="contact-form text-right" onSubmit={this.sendEmail}>
               {/*NAME*/}
@@ -114,7 +114,7 @@ class Contact extends Component{
               </div>
             </form>
           </div>
-        </MDBAnimation>
+        </Fade>
         <MDBContainer>
           <MDBModal isOpen={this.state.modal} toggle={()=>this.toggle()}>
             <h5 className={"m-4 text-center"}> Thanks!  We'll be in touch.</h5>
