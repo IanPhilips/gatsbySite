@@ -37,7 +37,7 @@ class Contact extends Component{
         {/*hero div*/}
         <div style={{ position:"relative"}}>
           {/*background image*/}
-          <img  className={"video"} src={bg} alt={""} style={{ height:"30vh", width:"100vw", objectFit:"cover" }}></img>
+          <img  className={'video'} src={bg} alt={''} style={{ height: '30vh', width: '100vw', objectFit: 'cover' }}/>
           {/*title div*/}
           <div  style={{ position:"absolute", top:0, background: "rgba(190,190,190,.3)", height:"30vh", width:"100vw", objectFit:"cover" }}>
             <div className="header-content text-white mx-auto" style={{ left:"50vh", marginTop:"17vh", }}>

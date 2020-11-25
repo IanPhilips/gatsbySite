@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 
 const IndexPage = () => (
   <Layout>
-    <section className="cta">
+    <section className="NotFound">
       <div className="cta-content">
         <div className="container">
           <h2>
