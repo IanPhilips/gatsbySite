@@ -6,3 +6,6 @@ to develop (localhost:8000):
 
 to deploy:  
 `npm run deploy`
+
+to add blog posts:  
+https://nifty-edison-fdfeb1.netlify.app/admin
