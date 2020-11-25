@@ -14,4 +14,8 @@ We use female Spanish names for Aragon releases, inspired by the story of Maria.
 
 That’s why Aragon 0.8 is called Camino. We are paving the way to deliver Aragon to the users that need it the most. Let’s go over what makes Aragon 0.8 Camino special.
 
-[![sacramento mrf](http://img.youtube.com/vi/-8iJz-pvqSg/0.jpg)](http://www.youtube.com/watch?v=-8iJz-pvqSg "sacramento mrf")
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/MUQfKFzIOeU" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
