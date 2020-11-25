@@ -4,16 +4,6 @@ photo: /assets/wild_turkey_eastern_us.jpg
 date: 2020-11-25T15:40:01.320Z
 title: We love Thanksgiving
 ---
-## A time for friendship!
-
-**We've got**:
-
-1. Mashers
-2. Turkey
-3. Stuffing
-4. Gravy, baby  
-
-Example body:
 
 We started working on Aragon four years ago. Since then, many things have changed, but one has stayed the same: the need for decentralized governance to advance humankind with liberating technology.
 
