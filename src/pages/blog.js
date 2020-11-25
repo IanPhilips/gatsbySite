@@ -30,7 +30,7 @@ const BlogListPage = ({data}) => {
         {allMarkdownRemark.edges.map((node, i) => {
           const blog = node.node.frontmatter;
           return (
-            <div className={"col-4"}>
+            <div className={"col-12 col-lg-6 col-xl-4"}>
             <MDBCard className={"mt-4 thumbnail-card"} key={i}>
               <div onClick={()=>{navigate("/"+blog.slug)}} style={{cursor:"pointer"}}>
                 {/*image*/}
