@@ -2,7 +2,7 @@ import React from 'react';
 import {  graphql } from 'gatsby';
 import Header from '../components/Header';
 import Layout from '../components/Layout';
-import { MDBCard, MDBCardBody, MDBCardHeader, MDBContainer } from 'mdbreact';
+import { MDBCard } from 'mdbreact';
 import { navigate } from '../../.cache/gatsby-browser-entry';
 import bg from '../assets/img/recyc.jpeg';
 

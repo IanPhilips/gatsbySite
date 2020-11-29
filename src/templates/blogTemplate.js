@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import { MDBContainer } from 'mdbreact';
-import bg from '../assets/img/recyc.jpeg';
 
 export default function Template({
                                    data, // this prop will be injected by the GraphQL query below.
