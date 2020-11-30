@@ -14,6 +14,9 @@ import hero from "../assets/images/Hero_Image.png";
 import frustration from "../assets/images/Frustration.png";
 import labels from "../assets/images/Labels.png";
 import contaminants from "../assets/images/Contaminants.png";
+import quote1 from "../assets/images/Quote1.png";
+import quote2 from "../assets/images/Quote2.png";
+import quote3 from "../assets/images/Quote3.png";
 
 import {
   MDBBtn,
@@ -76,8 +79,8 @@ class IndexPage extends Component{
             <h2> Consumers are Confused About Recycling, and it's Harming the Industry</h2>
             <hr/>
           </div>
-          <div className="text-center col-12 col-md-3">
-            <img src={frustration} alt={"frustrated consumer"} className={"img-fluid my-auto"}/>
+          <div className="text-center col-12 col-md-3 my-auto">
+            <img src={frustration} alt={"frustrated consumer"} className={"img-fluid shadow-image my-auto"}/>
           </div>
           <div className="text-center col-12 col-md-6">
             <h2 className={"big-num mt-4"}> 92% </h2>
@@ -87,42 +90,21 @@ class IndexPage extends Component{
               the opposite sex.
             </p>
           </div>
-          <div className="text-center col-12 col-md-3">
-            <img src={labels} alt={"frustrated consumer"} className={"my-auto"}/>
+          <div className="text-center col-12 col-md-3 my-auto">
+            <img src={labels} alt={"frustrated consumer"} className={"img-fluid shadow-image my-auto"}/>
           </div>
         </div>
 
         {/*QUOTES*/}
         <div className="row mt-5">
           <div className="text-center col-12 col-md-4">
-            <div className={"card "}>
-              <h1>"</h1>
-              <p className={""}>
-                My collection company has been throwing away my recycling because
-                I’ve been including cardboard. I didn’t know that they don’t accept cardboard!
-              </p>
-              <p className={"quoter"}>- Northern Colorado resident </p>
-            </div>
+           <img src={quote1} alt={"frustrated consumer quote"} className={"img-fluid"}/>
           </div>
           <div className="text-center col-12 col-md-4">
-            <div className={"card"}>
-              <h1 >"</h1>
-              <p className={"mt-4"}>
-              I just throw whatever into the recycling.
-              Hey, it creates more jobs.
-              </p>
-              <p className={"quoter "}>- Washington D.C. resident</p>
-            </div>
+           <img src={quote2} alt={"frustrated consumer quote"} className={"img-fluid"}/>
           </div>
           <div className="text-center col-12 col-md-4 ">
-            <div className={"card"}>
-              <h1 >"</h1>
-              <p className={""}>
-              My oatmeal container said to call my local recycler to see if it can be recycled.
-              What?! I’m not going to call anyone to see if one thing can be recycled!
-              </p>
-              <p className={"quoter"}>- Denver, Colorado resident</p>
-            </div>
+           <img src={quote3} alt={"frustrated consumer quote"} className={"img-fluid"}/>
           </div>
         </div>
 
@@ -273,14 +255,14 @@ class IndexPage extends Component{
 
     <section className="bg-gray educationNumbers" id="educationNumbers" >
       <div className={"row "}>
-        <div className={"col-12 text-center"}>
+        <div className={"col-12 text-center mb-2"}>
           <h4>The Time to Transform Recycling is Now</h4>
           <hr/>
         </div>
         <div className={"col-12 col-md-6"}>
           <div className={"row"}>
             <div className={"col-5 col-sm-4"}>
-              <h1 className={"big-num"}>50%</h1>
+              <h1 className={"big-num text-right"}>50%</h1>
             </div>
             <div className={"col-7"}>
               <p className={"ml-md-3 ml-lg-0 "}>
@@ -294,7 +276,7 @@ class IndexPage extends Component{
         <div className={"col-12 col-md-6"}>
           <div className={"row"}>
             <div className={"col-5 col-sm-4"}>
-            <h1 className={"big-num"}>10x</h1>
+            <h1 className={"big-num text-right"}>10x</h1>
           </div>
             <div className={"col-7"}>
               <p className={"ml-md-3 ml-lg-0 "}>
