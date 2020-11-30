@@ -5,6 +5,17 @@ header.masthead {
   height: 110vh;
   color: white;
   background: white;
+  @media screen and (max-width: 700px) {
+    height: 120vh;
+  }
+
+  h4 {
+    max-width: 800px;
+    font-weight: normal;
+    @media screen and (max-width: 1000px) {
+      max-width: 1000px;
+    }
+  }
 
   .typed-education-header{
     min-height:140px;
@@ -19,14 +30,7 @@ header.masthead {
       min-height:300px;
       margin-top:20vh;
     }
-
   }
-  h4{
-    max-width: 800px;
-    font-weight: normal;
-    @media screen and (max-width: 1000px) {
-      max-width: 1000px;
-    }
 
   // right align the titles if large screen
   .header-content {
@@ -43,7 +47,7 @@ header.masthead {
       align-content: center;
       justify-content: center;
     }
-    }
+
     .typed-header{
       min-height:140px;
       min-width: 800px;
@@ -56,13 +60,7 @@ header.masthead {
         min-height:200px;
       }
     }
-
-
   }
-  @media screen and (max-width: 700px) {
-    height: 120vh;
-  }
-
 
   @media (min-width: 992px) {
     height: 100vh;

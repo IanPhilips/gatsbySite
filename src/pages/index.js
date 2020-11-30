@@ -60,7 +60,7 @@ class IndexPage extends Component{
 
 
             </h1>
-            <h4 className={"mb-5 mx-auto"} style={{textTransform:"uppercase", fontWeight:"normal"}} >
+            <h4 className={"mb-5 mx-auto"} style={{textTransform:"uppercase", fontWeight:"normal", fontSize:"20px"}} >
               From consumer to material recovery facility, our AI-Powered software is reshaping recycling.
             </h4>
             <Fade triggerOnce delay={500} >
@@ -172,13 +172,13 @@ class IndexPage extends Component{
           </div>
         </Fade>
 
-        <div className="row">
-          <div className="col-lg-6 mt-5">
+        <div className="row mb-5">
+          <div className="col-lg-6 mt-2 mb-5 mx-auto  text-center">
             <Slide triggerOnce delay={0} direction={"left"}   >
               <img src={sampleEmail} alt={""} style={{width:"100%"}}/>
             </Slide>
           </div>
-          <div className="col-lg-6 mt-3 p-4">
+          <div className="col-lg-6 px-4">
             <Slide triggerOnce delay={0} direction={"right"} >
               <h5 className={"mb-3"}> Digital Oops Tagging & Material Characterization </h5>
               <p>
@@ -215,16 +215,17 @@ class IndexPage extends Component{
             </Fade>
           </div>
         </div>
+
           <div className="col-12">
             <hr style={{maxWidth:"90%"}}/>
           </div>
+
         <div className="row mt-5">
-          <div className="col-lg-6 mt-5">
-            <Slide triggerOnce delay={0} direction={"left"}>
+          <div className="col-lg-6 mt-5 mx-auto text-center">
+            <Slide triggerOnce delay={0} direction={"left"} >
               <img src={phoneApp} alt={"phone app"}  style={{width:"100%"}}/>
             </Slide>
           </div>
-
           <div className="col-lg-6 mt-3 p-4">
             <Slide triggerOnce delay={0} direction={"right"} >
               <h5> AI Sorting Mobile App </h5>

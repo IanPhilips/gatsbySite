@@ -1,12 +1,10 @@
 // Styling for the education sections
 $education-text-color: #404040;
-$education-h2-size: 24px;
 
 section.educationConsumers {
     color: $education-text-color;
 
     h2{
-        font-size:$education-h2-size;
         font-weight: normal;
     }
     .big-num{
@@ -38,7 +36,6 @@ section.educationPrograms {
         font-family:"Roboto", "sans-serif";
     }
     h2{
-        font-size:$education-h2-size;
         font-weight: normal;
     }
 }
@@ -50,11 +47,13 @@ section.educationProducts {
         margin-left:40px;
     }
     h2{
-        font-size:$education-h2-size;
         font-weight: normal;
     }
     p{
         line-height: 2.3;
+    }
+    img{
+        max-width:400px;
     }
 }
 

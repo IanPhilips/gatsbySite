@@ -54,7 +54,7 @@ class IndexPage extends Component{
 
 
         </h1>
-        <h4 className={"mb-5"} >
+        <h4 className={"mb-5"} style={{fontSize:"20px"}} >
           FROM CONSUMER TO MATERIAL RECOVERY FACILITY, OUR
           AI-POWERED SOFTWARE IS RESHAPING RECYCLING.
         </h4>
@@ -72,7 +72,7 @@ class IndexPage extends Component{
         <div className="row">
               <div className=" text-center col-12 col-md-6 ">
           <Fade triggerOnce delay={100} >
-              <h3>Say Goodbye to the Trash Can</h3>
+              <h2>Say Goodbye to the Trash Can</h2>
               <p className={"mt-4"}>
                 Bluterra is working to accelerate the world's transition to a circular economy by helping divert material away from our landfills and back into our economy.
               </p>
@@ -81,7 +81,7 @@ class IndexPage extends Component{
               </p>
           </Fade>
             </div>
-          <div className={"col-12 col-md-6"}>
+          <div className={"col-12 col-md-6 my-auto"}>
             <Fade triggerOnce delay={500} >
               <video autoPlay={"autoplay"} loop={"loop"} muted className={"video img-fluid"}>
                 <source src={vid} type={"video/mp4"}/>
@@ -170,7 +170,7 @@ class IndexPage extends Component{
       <div className="container" >
         <Slide triggerOnce delay={0} direction={"right"}   >
         <div className="section-heading text-center">
-          <h3>Configurable Data Puts You in Control</h3>
+          <h2>Configurable Data Puts You in Control</h2>
         </div>
         </Slide>
         <div className="row">
@@ -212,18 +212,6 @@ class IndexPage extends Component{
 
 
 
-    <section className="bg-gray" id="contact" style={{padding:"10px"}}>
-
-      <div className={"row d-flex justify-content-center align-content-center "}>
-        <div className="row px-5">
-          <b className={"my-auto mr-4"}> Ready to have adaptable, intelligent systems work for you? </b>
-          <MDBBtn href={"/contact"} className={"text-white mr-auto btn-tertiary"}>
-            LEARN MORE
-          </MDBBtn>
-        </div>
-      </div>
-
-    </section>
     <section className="contact bg-secondary" id="contactline" style={{padding:"2px"}}>
     </section>
 
