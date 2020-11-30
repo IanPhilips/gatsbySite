@@ -48,6 +48,7 @@ class Contact extends Component{
 
         <Fade triggerOnce delay={0} >
           <div className="container mt-5 mb-5">
+            <p className={"text-center"}> Let’s build something something great together.</p>
             <form className="contact-form text-right" onSubmit={this.sendEmail}>
               {/*NAME*/}
               <div className={"row"}>

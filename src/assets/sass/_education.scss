@@ -1,10 +1,12 @@
 // Styling for the education sections
-$education-text: #404040;
+$education-text-color: #404040;
+$education-h2-size: 24px;
 
 section.educationConsumers {
-    color:$education-text;
+    color: $education-text-color;
 
     h2{
+        font-size:$education-h2-size;
         font-weight: normal;
     }
     .big-num{
@@ -26,7 +28,7 @@ section.educationConsumers {
 }
 
 section.educationPrograms {
-    color:$education-text;
+    color: $education-text-color;
     p{
         line-height: 2.3;
     }
@@ -36,17 +38,19 @@ section.educationPrograms {
         font-family:"Roboto", "sans-serif";
     }
     h2{
+        font-size:$education-h2-size;
         font-weight: normal;
     }
 }
 
 
 section.educationProducts {
-    color:$education-text;
+    color: $education-text-color;
     li{
         margin-left:40px;
     }
     h2{
+        font-size:$education-h2-size;
         font-weight: normal;
     }
     p{
@@ -59,6 +63,7 @@ section.educationNumbers {
         color:#404040;
         font-weight: normal;
     }
+
     p{
         line-height: 2.3;
     }

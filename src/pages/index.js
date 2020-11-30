@@ -45,20 +45,22 @@ class IndexPage extends Component{
 
         <div className={"row d-flex justify-content-center align-content-center h-100"}>
           <div className="col-12 text-center" >
-            <h1 className={""} style={{marginTop:"40vh"}} >
+            <h1 className={"mx-auto typed-education-header"} >
+
                 {/*Imagine a world <b> </b>*/}
+              {/*Does my collection company recycle this coffee cup?*/}
               <div id="typed-strings">
+                <p> Does my collection company recycle this coffee cup?</p>
                 <p> Can I recycle this pizza box?</p>
                 <p> Do I need to rinse out this container? </p>
                 <p> Can I recycle number five plastic?</p>
-                <p> Is this coffee cup recyclable by my collection company?</p>
               </div>
               {/*NECESSARY:*/}
               <span id="typed"></span>
 
 
             </h1>
-            <h4 className={"mb-5"} style={{textTransform:"uppercase"}} >
+            <h4 className={"mb-5 mx-auto"} style={{textTransform:"uppercase", fontWeight:"normal"}} >
               From consumer to material recovery facility, our AI-Powered software is reshaping recycling.
             </h4>
             <Fade triggerOnce delay={500} >
@@ -80,7 +82,9 @@ class IndexPage extends Component{
             <hr/>
           </div>
           <div className="text-center col-12 col-md-3 my-auto">
-            <img src={frustration} alt={"frustrated consumer"} className={"img-fluid shadow-image my-auto"}/>
+            <Slide triggerOnce delay={0} direction={"left"}   >
+              <img src={frustration} alt={"frustrated consumer"} className={"img-fluid shadow-image my-auto"}/>
+            </Slide>
           </div>
           <div className="text-center col-12 col-md-6">
             <h2 className={"big-num mt-4"}> 92% </h2>
@@ -91,20 +95,28 @@ class IndexPage extends Component{
             </p>
           </div>
           <div className="text-center col-12 col-md-3 my-auto">
-            <img src={labels} alt={"frustrated consumer"} className={"img-fluid shadow-image my-auto"}/>
+            <Slide triggerOnce delay={0} direction={"right"}>
+              <img src={labels} alt={"frustrated consumer"} className={"img-fluid shadow-image my-auto"}/>
+            </Slide>
           </div>
         </div>
 
         {/*QUOTES*/}
         <div className="row mt-5">
           <div className="text-center col-12 col-md-4">
-           <img src={quote1} alt={"frustrated consumer quote"} className={"img-fluid"}/>
+            <Fade triggerOnce delay={400} >
+              <img src={quote1} alt={"frustrated consumer quote"} className={"img-fluid"}/>
+            </Fade>
           </div>
           <div className="text-center col-12 col-md-4">
-           <img src={quote2} alt={"frustrated consumer quote"} className={"img-fluid"}/>
+            <Fade triggerOnce delay={800} >
+              <img src={quote2} alt={"frustrated consumer quote"} className={"img-fluid"}/>
+            </Fade>
           </div>
           <div className="text-center col-12 col-md-4 ">
-           <img src={quote3} alt={"frustrated consumer quote"} className={"img-fluid"}/>
+            <Fade triggerOnce delay={1200} >
+              <img src={quote3} alt={"frustrated consumer quote"} className={"img-fluid"}/>
+            </Fade>
           </div>
         </div>
 
@@ -117,13 +129,15 @@ class IndexPage extends Component{
       <img src={contaminants} alt={"contaminants"} style={{ height: "100%", width: "100%", objectFit: "cover",  position:"absolute", top:0,}}/>
       <div  style={{ background: "rgba(100,100,100,.3)", height:"100%", width:"100%", objectFit:"cover" }}>
       <div className="container">
+        <Fade triggerOnce delay={0} >
+
         <div className="row d-flex justify-content-center align-content-center">
           <div className="text-center col-12 ">
             <h2 className={"text-white"}>Education Programs are Key to Cutting Contamination</h2>
             <hr/>
             <h1 className={"text-white big-num mt-4"}>20%</h1>
           </div>
-          <p className={"col-8 text-center text-white"}>
+          <p className={"col-12 col-md-8 text-center text-white"}>
             Comprehensive recycling education programs, including curbside feedback,
             have been shown to <b>reduce residential contamination rates </b> by up to 20%.
             This vastly affects the ROI of recycling.
@@ -132,6 +146,7 @@ class IndexPage extends Component{
             and MRF’s accept different materials.
           </p>
         </div>
+        </Fade>
       </div>
       </div>
     </section>
@@ -146,7 +161,7 @@ class IndexPage extends Component{
             <h2>We’re Making Recycling Mindlessly Easy, Profitable, & Universal</h2>
             <hr/>
           </div>
-            <div className={"text-center col-8"}>
+            <div className={"text-center col-12 col-md-8"}>
             <p>
               Our technology builds on today’s programs by making them automated,
               digital, affordable, continuous, and universal. In addition, our new
@@ -205,7 +220,7 @@ class IndexPage extends Component{
           </div>
         <div className="row mt-5">
           <div className="col-lg-6 mt-5">
-            <Slide triggerOnce delay={0} direction={"right"}   >
+            <Slide triggerOnce delay={0} direction={"left"}>
               <img src={phoneApp} alt={"phone app"}  style={{width:"100%"}}/>
             </Slide>
           </div>
@@ -254,6 +269,7 @@ class IndexPage extends Component{
 
 
     <section className="bg-gray educationNumbers" id="educationNumbers" >
+          <Fade delay={0} triggerOnce={true}>
       <div className={"row "}>
         <div className={"col-12 text-center mb-2"}>
           <h4>The Time to Transform Recycling is Now</h4>
@@ -261,10 +277,10 @@ class IndexPage extends Component{
         </div>
         <div className={"col-12 col-md-6"}>
           <div className={"row"}>
-            <div className={"col-5 col-sm-4"}>
+            <div className={"col-6 col-sm-4"}>
               <h1 className={"big-num text-right"}>50%</h1>
             </div>
-            <div className={"col-7"}>
+            <div className={"col-6 col-sm-7"}>
               <p className={"ml-md-3 ml-lg-0 "}>
                 The EPA has set a National Recycling Goal to increase the national
                 recycling rate to 50 percent by 2030. Their first measure to
@@ -275,10 +291,10 @@ class IndexPage extends Component{
         </div>
         <div className={"col-12 col-md-6"}>
           <div className={"row"}>
-            <div className={"col-5 col-sm-4"}>
+            <div className={"col-6 col-sm-4"}>
             <h1 className={"big-num text-right"}>10x</h1>
           </div>
-            <div className={"col-7"}>
+            <div className={"col-6 col-sm-7"}>
               <p className={"ml-md-3 ml-lg-0 "}>
                 Recycling in the United States creates ten times more jobs than
                 landfills. In 2012, there were 681,000 recycling jobs in the
@@ -287,9 +303,8 @@ class IndexPage extends Component{
             </div>
           </div>
         </div>
-
-
       </div>
+        </Fade>
     </section>
     <section className="contact bg-secondary" id="contactline" style={{padding:"2px"}}>
     </section>
