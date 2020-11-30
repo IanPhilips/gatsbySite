@@ -7,14 +7,13 @@ import Typed from 'typed.js';
 import { Slide, Fade } from "react-awesome-reveal";
 
 
-import down from "../assets/img/icon_processingcosts.png";
-import meter from "../assets/img/icon_efficiency.png";
-import trash from "../assets/img/icon_contamination.png";
-import up from "../assets/img/icon_increaserevenue.png";
-import dashboard1 from "../assets/images/Bluterra_Dashboard_Overview.png";
-import dashboard2 from "../assets/images/Bluterra_Dashboard_PartnerDetail.png";
-import nasa from "../assets/images/nasa.jpg";
-import vid from "../assets/videos/JumboShortMRF.mp4";
+
+import sampleEmail from "../assets/images/Sample_Email.png";
+import phoneApp from "../assets/images/Phone_App.png";
+import hero from "../assets/images/Hero_Image.png";
+import frustration from "../assets/images/Frustration.png";
+import labels from "../assets/images/Labels.png";
+import contaminants from "../assets/images/Contaminants.png";
 
 import {
   MDBBtn,
@@ -38,191 +37,277 @@ class IndexPage extends Component{
     <Header />
 
     <header className="masthead">
-      <img src={nasa} alt={"earth"} style={{ height: "100%", width: "100%", objectFit: "cover" }}/>
+      <img src={hero} alt={"earth"} style={{ height: "100%", width: "100%", objectFit: "cover" }}/>
       <div  style={{ position:"absolute", top:0, background: "rgba(100,100,100,.3)", height:"100%", width:"100%", objectFit:"cover" }}>
 
-      <div className="header-content" >
-        <h1 className={"my-2 mx-auto typed-header"} >
-            Imagine a world <b> </b>
-          <div id="typed-strings">
-            <p> without waste.</p>
-            <p> without landfills.</p>
-            <p> that's sustainable.</p>
+        <div className={"row d-flex justify-content-center align-content-center h-100"}>
+          <div className="col-12 text-center" >
+            <h1 className={""} style={{marginTop:"40vh"}} >
+                {/*Imagine a world <b> </b>*/}
+              <div id="typed-strings">
+                <p> Can I recycle this pizza box?</p>
+                <p> Do I need to rinse out this container? </p>
+                <p> Can I recycle number five plastic?</p>
+                <p> Is this coffee cup recyclable by my collection company?</p>
+              </div>
+              {/*NECESSARY:*/}
+              <span id="typed"></span>
+
+
+            </h1>
+            <h4 className={"mb-5"} style={{textTransform:"uppercase"}} >
+              From consumer to material recovery facility, our AI-Powered software is reshaping recycling.
+            </h4>
+            <Fade triggerOnce delay={500} >
+            <MDBBtn href={"/contact"} >
+                LEARN MORE
+              </MDBBtn>
+            </Fade>
           </div>
-          {/*NECESSARY:*/}
-          <span id="typed"></span>
-
-
-        </h1>
-        <h4 className={"mb-5"} >
-          FROM CONSUMER TO MATERIAL RECOVERY FACILITY, OUR
-          AI-POWERED SOFTWARE IS RESHAPING RECYCLING.
-        </h4>
-        <Fade triggerOnce delay={500} >
-        <MDBBtn href={"/contact"} >
-            LEARN MORE
-          </MDBBtn>
-        </Fade>
       </div>
       </div>
     </header>
 
-    <section className="about" id="video">
+    <section className="educationConsumers" id="educationConsumers">
       <div className="container" >
-        <div className="row">
-              <div className=" text-center col-12 col-md-6 ">
-          <Fade triggerOnce delay={100} >
-              <h3>Say Goodbye to the Trash Can</h3>
-              <p className={"mt-4"}>
-                Bluterra is working to accelerate the world's transition to a circular economy by helping divert material away from our landfills and back into our economy.
+        <div className="row d-flex">
+          {/*CONSUFED CONSUMERS*/}
+          <div className=" text-center col-12">
+            <h2> Consumers are Confused About Recycling, and it's Harming the Industry</h2>
+            <hr/>
+          </div>
+          <div className="text-center col-12 col-md-3">
+            <img src={frustration} alt={"frustrated consumer"} className={"img-fluid my-auto"}/>
+          </div>
+          <div className="text-center col-12 col-md-6">
+            <h2 className={"big-num mt-4"}> 92% </h2>
+            <p className={"mx-4"}>
+              According to the Grocery Manufacturers Association, 92% of consumers believe that recycling is
+              <b> more confusing </b> than either doing taxes, building Ikea furniture, the stock market, or understanding
+              the opposite sex.
+            </p>
+          </div>
+          <div className="text-center col-12 col-md-3">
+            <img src={labels} alt={"frustrated consumer"} className={"my-auto"}/>
+          </div>
+        </div>
+
+        {/*QUOTES*/}
+        <div className="row mt-5">
+          <div className="text-center col-12 col-md-4">
+            <div className={"card "}>
+              <h1>"</h1>
+              <p className={""}>
+                My collection company has been throwing away my recycling because
+                I’ve been including cardboard. I didn’t know that they don’t accept cardboard!
               </p>
-              <p className={"mt-4"}>
-                Our products leverage Artificial Intelligence to drive revolutionary efficiencies in Material Recovery Facilities and educate consumers through mobile app and vehicle-based software solutions, leading to cleaner and more robust recycling streams.
-              </p>
-          </Fade>
+              <p className={"quoter"}>- Northern Colorado resident </p>
             </div>
-          <div className={"col-12 col-md-6"}>
-            <Fade triggerOnce delay={500} >
-              <video autoPlay={"autoplay"} loop={"loop"} muted className={"video img-fluid"}>
-                <source src={vid} type={"video/mp4"}/>
-              </video>
+          </div>
+          <div className="text-center col-12 col-md-4">
+            <div className={"card"}>
+              <h1 >"</h1>
+              <p className={"mt-4"}>
+              I just throw whatever into the recycling.
+              Hey, it creates more jobs.
+              </p>
+              <p className={"quoter "}>- Washington D.C. resident</p>
+            </div>
+          </div>
+          <div className="text-center col-12 col-md-4 ">
+            <div className={"card"}>
+              <h1 >"</h1>
+              <p className={""}>
+              My oatmeal container said to call my local recycler to see if it can be recycled.
+              What?! I’m not going to call anyone to see if one thing can be recycled!
+              </p>
+              <p className={"quoter"}>- Denver, Colorado resident</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    {/*EDUCATION PROGRAMS*/}
+    <section className="educationPrograms" id="educationPrograms" style={{position:"relative"}}>
+      <img src={contaminants} alt={"contaminants"} style={{ height: "100%", width: "100%", objectFit: "cover",  position:"absolute", top:0,}}/>
+      <div  style={{ background: "rgba(100,100,100,.3)", height:"100%", width:"100%", objectFit:"cover" }}>
+      <div className="container">
+        <div className="row d-flex justify-content-center align-content-center">
+          <div className="text-center col-12 ">
+            <h2 className={"text-white"}>Education Programs are Key to Cutting Contamination</h2>
+            <hr/>
+            <h1 className={"text-white big-num mt-4"}>20%</h1>
+          </div>
+          <p className={"col-8 text-center text-white"}>
+            Comprehensive recycling education programs, including curbside feedback,
+            have been shown to <b>reduce residential contamination rates </b> by up to 20%.
+            This vastly affects the ROI of recycling.
+            Existing programs require boots on the ground, impact a limited number
+            of customers, and the benefits can wear off as people move, products change,
+            and MRF’s accept different materials.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    {/*EDUCATION PRODUCTS*/}
+
+    <section className="educationProducts" id="educationProducts">
+      <div className="container" >
+        <Fade triggerOnce delay={0} >
+          <div className={"row d-flex justify-content-center align-content-center mb-5"}>
+          <div className="text-center col-12 ">
+            <h2>We’re Making Recycling Mindlessly Easy, Profitable, & Universal</h2>
+            <hr/>
+          </div>
+            <div className={"text-center col-8"}>
+            <p>
+              Our technology builds on today’s programs by making them automated,
+              digital, affordable, continuous, and universal. In addition, our new
+              mobile app revolutionizes how consumers interact with their recycling
+              by completely removing confusion and recycling friction.
+            </p>
+            </div>
+          </div>
+        </Fade>
+
+        <div className="row">
+          <div className="col-lg-6 mt-5">
+            <Slide triggerOnce delay={0} direction={"left"}   >
+              <img src={sampleEmail} alt={""} style={{width:"100%"}}/>
+            </Slide>
+          </div>
+          <div className="col-lg-6 mt-3 p-4">
+            <Slide triggerOnce delay={0} direction={"right"} >
+              <h5 className={"mb-3"}> Digital Oops Tagging & Material Characterization </h5>
+              <p>
+                Automate and digitize “Oops” Tagging with a truck-mounted computer
+                vision system. When a cart is tipped into the truck, the vision
+                system identifies the components and contaminants, and logs them
+                to the customer’s account.
+              </p>
+              <p>
+                <b>Customers</b>
+                <li>  Earn a monthly recycling score</li>
+                <li>  Receive pictures of their contaminants for that period</li>
+                <li>  See ongoing recycling tips and information</li>
+              </p>
+              <p>
+                <b>Haulers</b>
+                <li>  See real-time material characterization reports</li>
+                <li> Identify high-contaminant customer areas</li>
+                <li>  See the most common contamination items</li>
+                <li>  Watch contamination decrease over time</li>
+              </p>
+              <p>
+                <b>Optional Expansions</b>
+                <li> Combine with mobile app for comprehensive approach</li>
+                <li>  Hazard item notifications for driver</li>
+                <li>  Real-time tag printing to physically attach to cart</li>
+              </p>
+
+            </Slide>
+            <Fade triggerOnce={true}>
+              <MDBBtn href={"/contact"} className={"text-white mr-auto btn-tertiary"}>
+                get started
+              </MDBBtn>
             </Fade>
           </div>
         </div>
+          <div className="col-12">
+            <hr style={{maxWidth:"90%"}}/>
+          </div>
+        <div className="row mt-5">
+          <div className="col-lg-6 mt-5">
+            <Slide triggerOnce delay={0} direction={"right"}   >
+              <img src={phoneApp} alt={"phone app"}  style={{width:"100%"}}/>
+            </Slide>
+          </div>
+
+          <div className="col-lg-6 mt-3 p-4">
+            <Slide triggerOnce delay={0} direction={"right"} >
+              <h5> AI Sorting Mobile App </h5>
+              <p>
+                Empower your customers to recycle correctly from the start.
+                After all, you can order a pizza or latte with your phone,
+                so why not let your phone do your recycling sorting too? Our
+                app uses computer vision to identify an object, let the user
+                know if their service provider accepts that item, and what steps
+                should be taken before recycling.
+              </p>
+              <p>
+                <b>Customers</b>
+                <li>  Easily determine in seconds if an item is recyclable and steps needed  - no handouts, research, or thought required</li>
+                <li>  Access list of items recyclable by their hauler</li>
+                <li>  Always up to date with accepted materials and procedures</li>
+              </p>
+              <p>
+                <b>Haulers</b>
+                <li>  Update items and materials you can receive</li>
+                <li> Send notificaitons to customers - new materials accepted, pickup delays or updates, and more</li>
+              </p>
+              <p>
+                <b>Optional Expansions</b>
+                <li>Combine with mobile app for comprehensive approach</li>
+                <li>  Billing portal for customers</li>
+                <li>  Real-time truck and status updates for customers</li>
+              </p>
+
+            </Slide>
+            <Fade triggerOnce={true}>
+              <MDBBtn href={"/contact"} className={"text-white mr-auto btn-tertiary"}>
+                get started
+              </MDBBtn>
+            </Fade>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
 
-    <section className="benefits bg-gray-slant" id="benefits">
-      <div className="container-fluid">
-        <div className="section-heading text-center ">
-          <h2>Actionable Data About Your Inbound Material</h2>
+    <section className="bg-gray educationNumbers" id="educationNumbers" >
+      <div className={"row "}>
+        <div className={"col-12 text-center"}>
+          <h4>The Time to Transform Recycling is Now</h4>
+          <hr/>
         </div>
-        <div className="row">
-          <div className="col-lg-12 my-auto">
-            <div className="container" >
-              <div className="row ">
-
-                <div className="col-lg-3">
-                  <Fade triggerOnce delay={250} >
-                  <div className="feature-item">
-                    <img className={"mb-4 align-content-center justify-content-center"}
-                         src={down} alt={""}
-                    />
-                    <h5>Reduce Processing Costs</h5>
-                    <p className="mt-4">
-                      Understand your current inbound material stream and allow processing equipment to stay optimized for more efficient sorting.                    </p>
-                  </div>
-                </Fade>
-                </div>
-
-                <div className="col-lg-3">
-                  <Fade triggerOnce delay={500} >
-
-                  <div className="feature-item">
-                    <img className={"mb-4 align-content-center justify-content-center"}
-                         src={trash} alt={""}
-                    />
-                    <h5>Track Contamination</h5>
-                    <p className=" mt-4">
-                      Monitor contamination levels for your facility and all inbound partners in order to identify target areas for increased focus and efficiency.
-                    </p>
-                  </div>
-                  </Fade>
-                </div>
-
-                <div className="col-lg-3">
-                  <Fade triggerOnce delay={750} >
-                  <div className="feature-item">
-                    <img className={"mb-4 align-content-center justify-content-center"}
-                         src={up} alt={""}
-                    />
-                    <h5>Increase Revenue</h5>
-                    <p className=" mt-4">
-                      Ensure optimal billing for inbound partners based on current stream composition, contamination levels, and tonnage.
-                    </p>
-                  </div>
-                  </Fade>
-                </div>
-
-                <div className="col-lg-3">
-                  <Fade triggerOnce delay={1000} >
-
-                    <div className="feature-item">
-                      <img className={"mb-4 align-content-center justify-content-center"}
-                           src={meter} alt={""}
-                      />
-                      <h5>Increase Efficiency</h5>
-                      <p className=" mt-4">
-                        Reduce facility downtime through real-time hazardous material alerts and monitor productivity gains through equipment parameter modifications.
-                      </p>
-                    </div>
-                  </Fade>
-                </div>
+        <div className={"col-12 col-md-6"}>
+          <div className={"row"}>
+            <div className={"col-5 col-sm-4"}>
+              <h1 className={"big-num"}>50%</h1>
+            </div>
+            <div className={"col-7"}>
+              <p className={"ml-md-3 ml-lg-0 "}>
+                The EPA has set a National Recycling Goal to increase the national
+                recycling rate to 50 percent by 2030. Their first measure to
+                accomplish this is to recuce contamination.
+              </p>
             </div>
           </div>
         </div>
+        <div className={"col-12 col-md-6"}>
+          <div className={"row"}>
+            <div className={"col-5 col-sm-4"}>
+            <h1 className={"big-num"}>10x</h1>
+          </div>
+            <div className={"col-7"}>
+              <p className={"ml-md-3 ml-lg-0 "}>
+                Recycling in the United States creates ten times more jobs than
+                landfills. In 2012, there were 681,000 recycling jobs in the
+                United States, and there are many more to be created.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section className="features " id="features">
-      <div className="container" >
-        <Slide triggerOnce delay={0} direction={"right"}   >
-        <div className="section-heading text-center">
-          <h3>Configurable Data Puts You in Control</h3>
-        </div>
-        </Slide>
-        <div className="row">
-          <div className="col-lg-8 ">
-            <Slide triggerOnce delay={0} direction={"left"}   >
-              <img src={dashboard1} alt={""} style={{width:"100%",  boxShadow:"8px 8px 5px lightgray"}}/>
-            </Slide>
-          </div>
-          <div className="col-lg-4 mt-3 bg-gray bg-left-bleed p-4">
-            <Slide triggerOnce delay={0} direction={"right"}   >
-              <h5> Your Facility at a Glance</h5>
-              <hr align={"left"} className={"align-content-left justify-content-left mb-4"}/>
-              <p> Easily view trends of material, contamination, and tonnage in order to better plan and mange your facility </p>
-              <p> Quickly sort and view inbound partners by several metrics, letting you to focus on the most important ones </p>
-              <p> Find and identify areas for opportunity and growth </p>
-            </Slide>
-          </div>
-        </div>
-        <div className="row mt-4">
-          <div className="col-lg-4 mt-3 bg-right-bleed bg-gray p-4">
-            <Slide triggerOnce delay={0} direction={"left"}   >
-              <h5> Partner-Specific Data </h5>
-              <hr align={"left"} className={"align-content-left justify-content-left  mb-4"}/>
-              <p> Always maintain a view into how an individual company or paratner is impacting your bottom line </p>
-              <p> Track important metrics for each partner, like contamination, in order to effectively invoice </p>
-              <p> View a log of each inbound load as well as the overall trend of a partner’s performance over time </p>
-            </Slide>
-          </div>
-          <div className="col-lg-8 order-first order-lg-last">
-            <Slide triggerOnce delay={0} direction={"right"}   >
-                  <img src={dashboard2} alt={""} style={{width:"100%", boxShadow:"8px 8px 5px lightgray"}}/>
-            </Slide>
-          </div>
-
-        </div>
 
       </div>
-    </section>
-
-
-
-    <section className="bg-gray" id="contact" style={{padding:"10px"}}>
-
-      <div className={"row d-flex justify-content-center align-content-center "}>
-        <div className="row px-5">
-          <b className={"my-auto mr-4"}> Ready to have adaptable, intelligent systems work for you? </b>
-          <MDBBtn href={"/contact"} className={"text-white mr-auto btn-tertiary"}>
-            LEARN MORE
-          </MDBBtn>
-        </div>
-      </div>
-
     </section>
     <section className="contact bg-secondary" id="contactline" style={{padding:"2px"}}>
     </section>

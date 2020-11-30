@@ -1,0 +1,97 @@
+// Styling for the education sections
+$education-text: #404040;
+
+section.educationConsumers {
+    color:$education-text;
+
+    h2{
+        font-weight: normal;
+    }
+    .big-num{
+        font-size: 80px;
+        font-weight: normal;
+        font-family:"Roboto", "sans-serif";
+    }
+    p{
+        line-height: 2.3;
+        font-size: 14px;
+    }
+
+    img{
+        width:100%;
+        border-radius: 4px;
+        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+    .quoter{
+        font-size: 11px;
+        color:#404040;
+        margin-top:20px;
+        position:absolute;
+        left:50%;
+        transform: translateX(-50%);
+        bottom:10px;
+    }
+    .card{
+        h1{
+            position: absolute;
+            top:-15px;
+            font-size: 50px;
+            font-family: "PlayfairDisplay", "serif";
+            left:50%;
+            transform: translateX(-50%);
+        }
+        p{
+            line-height: 1.58;
+        }
+        margin:10px;
+        height:200px;
+        padding: 30px;
+        box-shadow: 0 0;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+}
+
+section.educationPrograms {
+    color:$education-text;
+    p{
+        line-height: 2.3;
+    }
+    .big-num{
+        font-size: 80px;
+        font-weight: normal;
+        font-family:"Roboto", "sans-serif";
+    }
+    h2{
+        font-weight: normal;
+    }
+}
+
+
+section.educationProducts {
+    color:$education-text;
+    li{
+        margin-left:40px;
+    }
+    h2{
+        font-weight: normal;
+    }
+    p{
+        line-height: 2.3;
+    }
+}
+
+section.educationNumbers {
+    h4{
+        color:#404040;
+        font-weight: normal;
+    }
+    p{
+        line-height: 2.3;
+    }
+    .big-num{
+        font-size: 80px;
+        font-weight: normal;
+        font-family:"Roboto", "sans-serif";
+    }
+}

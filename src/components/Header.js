@@ -77,16 +77,19 @@ export default class Header extends Component {
           >
             <ul className="navbar-nav my-auto mr-auto">
               <li className="nav-item my-auto mx-2">
-                <b tabIndex={0} role="button" className="nav-link" id={"#benefits"}
-                   onClick={() => this.handleNavLinkClick("#benefits")} onKeyDown={() => this.handleNavLinkClick("#benefits")} >
-                    Benefits
+                <b tabIndex={0} role="button" className="nav-link" id={"#educationProducts"}
+                   onClick={() => this.handleNavLinkClick("#educationProducts")} onKeyDown={() => this.handleNavLinkClick("#educationProducts")} >
+                    Products
                 </b>
               </li>
               <li className="nav-item my-auto mx-2 ">
-                  <b tabIndex={0} role="button" id={"#features"} className="nav-link"
-                     onClick={() => this.handleNavLinkClick("#features") } onKeyDown={() => this.handleNavLinkClick("#features")}>
-                    Features
-                  </b>
+                <a  className="nav-link" href="/mrfs">
+                  <b role="button" tabIndex={0}>MRFs</b>
+                </a>
+                  {/*<b tabIndex={0} role="button" id={"#features"} className="nav-link"*/}
+                  {/*   onClick={() => this.handleNavLinkClick("#features") } onKeyDown={() => this.handleNavLinkClick("#features")}>*/}
+                  {/*  MRFS*/}
+                  {/*</b>*/}
               </li>
               <li className="nav-item my-auto mx-2">
                   <a  className="nav-link" href="/contact">
