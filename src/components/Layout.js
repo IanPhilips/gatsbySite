@@ -8,7 +8,7 @@ import '../assets/sass/new-age.scss';
 class Layout extends Component {
   render() {
     const { children } = this.props;
-    const imageUrl="https://www.bluterra.io/nasa.png";
+    const imageUrl="https://www.bluterra.io/nasa.jpg";
     const description = "From consumer to material recovery facility, our AI-Powered software is reshaping recycling.\n";
     return (
       <StaticQuery

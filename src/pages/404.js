@@ -2,9 +2,11 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 import { Link } from 'gatsby';
+import Header from '../components/Header';
 
 const IndexPage = () => (
   <Layout>
+    <Header/>
     <section className="NotFound">
       <div className="cta-content">
         <div className="container">
