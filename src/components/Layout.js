@@ -8,7 +8,7 @@ import '../assets/sass/new-age.scss';
 class Layout extends Component {
   render() {
     const { children } = this.props;
-    const imageUrl="https://www.bluterra.io/nasa.jpg";
+    const imageUrl="https://www.bluterra.io/cans.png";
     const description = "From consumer to material recovery facility, our AI-Powered software is reshaping recycling.\n";
     return (
       <StaticQuery
@@ -32,8 +32,8 @@ class Layout extends Component {
             >
               <meta property='og:image' content={imageUrl} />
               <meta property='twitter:image' content={imageUrl} />
-              <meta property='og:image:width' content={4312} />
-              <meta property='og:image:height' content={2868} />
+              <meta property='og:image:width' content={2882} />
+              <meta property='og:image:height' content={1434} />
               <meta property='description' content={description} />
               <meta property='og:description' content={description} />
               <meta property='twitter:description' content={description} />
