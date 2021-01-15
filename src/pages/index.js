@@ -189,7 +189,7 @@ class IndexPage extends Component{
 
     <section className="bg-gray" id="gettingStarted" style={{padding:"20px"}}>
       <div className={"row text-center"}>
-        <div className={"col-8 mx-auto "}>
+        <div className={"col-12 mx-auto "}>
           <MDBCard border={"none"}  className={"p-4"} style={{
             borderColor:"transparent",
             backgroundColor:"transparent"}}>
@@ -197,7 +197,7 @@ class IndexPage extends Component{
             <h2 className={"mb-4"}> Getting Started is Easy.</h2>
 
             <p className={"mb-4"}>No RFID’s. No new carts. No headaches.</p>
-            <p className={"mx-auto"} style={{maxWidth:"70%"}}>Contact us to get started and see if Bluterra will work with your existing hopper camera system and service area.</p>
+            <p className={"mx-auto"} style={{maxWidth:"50%"}}>Contact us to get started and see if Bluterra will work with your existing hopper camera system and service area.</p>
 
             <Fade triggerOnce delay={500} >
               <MDBBtn className={"text-white btn-tertiary"} href={"/contact"} >
