@@ -48,7 +48,6 @@ class Contact extends Component{
 
         <Fade triggerOnce delay={0} >
           <div className="container mt-5 mb-5">
-            <p className={"text-center"}> Let’s build something something great together.</p>
             <form className="contact-form text-right" onSubmit={this.sendEmail}>
               {/*NAME*/}
               <div className={"row"}>
@@ -80,12 +79,6 @@ class Contact extends Component{
                 <div className={"row col-3 col-lg-2 text-left mt-3 mr-2 interest-section"}>
                   <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                          id="beta" name="beta" value="beta"
-                  />
-                  <p className={"my-1 ml-2"}>Beta Program</p>
-                </div>
-                <div className={"row col-3 col-lg-2 text-left mt-3 mr-2"}>
-                  <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
-                         name="learn" value="learn" id={"learn"}
                   />
                   <p className={"my-1 ml-2"}>Learn More</p>
                 </div>

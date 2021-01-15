@@ -10,14 +10,11 @@ export default function Footer() {
         <div className={"col-12 col-md-6"}>
         <br/> <br/>
 
-        <p> 1644 Platte Street, Suite 400 </p>
-        <br/>
+        <p className={"mb-1"}> 1644 Platte Street, Suite 400 </p>
         <p> Denver, CO 80202 </p>
         <br/>
 
-        <br/>
-        <p> Hello@Bluterra.io </p>
-        <br/>
+        <p className={"mb-1"}> Hello@Bluterra.io </p>
         <p> +1 720.675.9293 </p>
 
         <br/> <br/> <br/>
