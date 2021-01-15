@@ -54,7 +54,7 @@ export default class Header extends Component {
       >
         <div className="container-fluid">
           <a title={config.siteTitle} className="navbar-brand " href="/"  >
-            <img src={logo} alt={"logo"} width={220}
+            <img src={logo} alt={"logo"} width={180}
                  onClick={() =>     this.toggleMenu(false)}
                  onKeyDown={() =>    this.toggleMenu(false)}/>
           </a>
@@ -77,14 +77,15 @@ export default class Header extends Component {
           >
             <ul className="navbar-nav my-auto mr-auto">
               <li className="nav-item my-auto mx-2">
-                <b tabIndex={0} role="button" className="nav-link" id={"#educationProducts"}
-                   onClick={() => this.handleNavLinkClick("#educationProducts")} onKeyDown={() => this.handleNavLinkClick("#educationProducts")} >
-                    Products
+                <b tabIndex={0} role="button" className="nav-link" id={"#Solutions"}
+                   onClick={() => this.handleNavLinkClick("#Solutions")}
+                   onKeyDown={() => this.handleNavLinkClick("#Solutions")} >
+                    Solutions
                 </b>
               </li>
               <li className="nav-item my-auto mx-2 ">
-                <a  className="nav-link" href="/mrfs">
-                  <b role="button" tabIndex={0}>MRFs</b>
+                <a  className="nav-link" href="/app">
+                  <b role="button" tabIndex={0}>App</b>
                 </a>
                   {/*<b tabIndex={0} role="button" id={"#features"} className="nav-link"*/}
                   {/*   onClick={() => this.handleNavLinkClick("#features") } onKeyDown={() => this.handleNavLinkClick("#features")}>*/}

@@ -10,15 +10,12 @@ section.benefits {
         border-radius: 10px;
     }
     .container{
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
     }
 
     .section-heading {
-        margin-bottom: 50px;
-        p {
-            margin-bottom: 0;
-        }
+        margin-bottom: 20px;
+        margin-top:10px
     }
     .feature-item {
         max-width: 325px;
@@ -33,9 +30,9 @@ section.benefits {
             font-size: 30px;
         }
         h5{
-            font-weight: bold;
+            font-weight: normal;
             margin-top: 20px;
-            font-size: 19px;
+            font-size: 16px;
         }
         i {
             font-size: 80px;

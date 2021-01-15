@@ -1,60 +1,65 @@
 
-@media (max-width: 400px) {
-    .contact-text {
-        margin-left: 15px;
-    }
-    .interest-section{
-        margin-left: 5px;
-    }
-
-}
 // Styling for the download section
 section.contact {
+    .row{
+        margin-left:0 !important;
+        margin-right:0;
+    }
 
-    text-align: center;
-    h2 {
-        margin-top: 0;
-        margin-bottom: 25px;
-        i {
-            color: $brand-google-plus;
+
+    @media (max-width: 400px) {
+        .contact-text {
+            margin-left: 15px;
         }
-    }
-    ul.list-social {
-        margin-bottom: 0;
-        li {
-            a {
-                font-size: 40px;
-                line-height: 80px;
-                display: block;
-                width: 80px;
-                height: 80px;
-                color: white;
-                border-radius: 100%;
-            }
-            &.social-twitter {
-                a {
-                    background-color: $brand-twitter;
-                    &:hover {
-                        background-color: darken($brand-twitter, 5%);
-                    }
-                }
-            }
-            &.social-facebook {
-                a {
-                    background-color: $brand-facebook;
-                    &:hover {
-                        background-color: darken($brand-facebook, 5%);
-                    }
-                }
-            }
-            &.social-google-plus {
-                a {
-                    background-color: $brand-google-plus;
-                    &:hover {
-                        background-color: darken($brand-google-plus, 5%);
-                    }
-                }
-            }
+        .interest-section{
+            margin-left: 5px;
         }
+
     }
+    //text-align: center;
+    //h2 {
+    //    margin-top: 0;
+    //    margin-bottom: 25px;
+    //    i {
+    //        color: $brand-google-plus;
+    //    }
+    //}
+    //ul.list-social {
+    //    margin-bottom: 0;
+    //    li {
+    //        a {
+    //            font-size: 40px;
+    //            line-height: 80px;
+    //            display: block;
+    //            width: 80px;
+    //            height: 80px;
+    //            color: white;
+    //            border-radius: 100%;
+    //        }
+    //        &.social-twitter {
+    //            a {
+    //                background-color: $brand-twitter;
+    //                &:hover {
+    //                    background-color: darken($brand-twitter, 5%);
+    //                }
+    //            }
+    //        }
+    //        &.social-facebook {
+    //            a {
+    //                background-color: $brand-facebook;
+    //                &:hover {
+    //                    background-color: darken($brand-facebook, 5%);
+    //                }
+    //            }
+    //        }
+    //        &.social-google-plus {
+    //            a {
+    //                background-color: $brand-google-plus;
+    //                &:hover {
+    //                    background-color: darken($brand-google-plus, 5%);
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 }

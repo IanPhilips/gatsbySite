@@ -1,9 +1,9 @@
 // Styling for the footer
 footer {
-    padding: 50px 0;
+    padding: 10px 0;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: $theme-tertiary;
     line-height: 1.88;
     font-family: "Poppins", sans-serif;
     p {

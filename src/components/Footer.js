@@ -17,18 +17,12 @@ export default function Footer() {
         <p className={"mb-1"}> Hello@Bluterra.io </p>
         <p> +1 720.675.9293 </p>
 
-        <br/> <br/> <br/>
+        <br/>
 
         <p> &copy; {config.siteTitle} 2020. All Rights Reserved. </p>
           <br/>
         </div>
-        <div className={"col-12 col-md-6 text-center my-auto order-first order-md-last"}>
-          <h1> Let's Chat</h1>
-          <p className={"mt-4"}> Ready to have adaptable, intelligent systems work for you?  </p>
-          <MDBBtn href={"/contact"} className={"mx-auto mt-4"}>
-            Contact us
-          </MDBBtn>
-        </div>
+
 
         </div>
         {/*<ul className="list-inline">*/}
