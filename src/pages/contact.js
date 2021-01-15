@@ -88,10 +88,10 @@ class Contact extends Component{
                     </div>
                     {/*Interests*/}
                     <div className={"row d-flex justify-content-center align-content-center my-2"}>
-                      <label htmlFor={"beta"} className={"col-2 col-lg-2 mt-3 mb-3 mr-3 my-1 p-0 interest-label"}>
+                      <label htmlFor={"beta"} className={"col-3 col-lg-2 mt-3 mb-3 mr-3 my-1 p-0 interest-label"}>
                         Interests
                       </label>
-                      <div className={"row col-5 col-lg-4 text-left mt-3 mr-2 interest-section"}>
+                      <div className={"row col-4 col-lg-4 text-left mt-3 mr-2 interest-section"}>
                         <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                                id="beta" name="beta" value="beta"
                         />
@@ -106,8 +106,8 @@ class Contact extends Component{
                     </div>
                       {/*MESSAGE*/}
                     <div className={"row d-flex justify-content-center align-content-center"}>
-                    <label htmlFor={"message"} className={"col-2 col-lg-2 m-3 my-1 p-0"}> Message </label>
-                      <textarea className={"mt-3 col-lg-7 col-8 contact-text "} rows={"4"} cols={"50"}
+                    <label htmlFor={"message"} className={"col-3 col-lg-2 m-3 my-1 p-0 message-label"}> Message </label>
+                      <textarea className={"mt-3 col-lg-7 col-7 contact-text "} rows={"4"} cols={"50"}
                                 placeholder={""} style={{borderRadius:"5px", borderWidth:"1.5px"}}
                                 name="message" id={"message"}
                       />
