@@ -170,7 +170,15 @@ class IndexPage extends Component{
               <h5> Seamless Communication</h5>
               <hr align={"right"} className={"align-content-right justify-content-right  mb-4"}/>
                 <p>Attack contamination through automated and individualized feedback, delived directly to your customers.</p>
-                <p>Text Notifications Email Postcard mailers Mobile app</p>
+              <div className={"row text-center"} style={{marginLeft:"80px"}}>
+                <p className={"col-6"}>Text Notifications</p>
+                <p className={"col-6"}>Email</p>
+              </div>
+              <div className={"row text-center"} style={{marginLeft:"80px"}}>
+                <p className={"col-6"}>Postcard Mailers</p>
+                <p className={"col-6"}>Mobile App</p>
+              </div>
+
                 <p>Want us to send a postcard to the top 10% contaminated accounts? No problem! One click is all it takes, and then monitor the campaign’s impact through the dashboard.</p>
             </Slide>
           </div>
