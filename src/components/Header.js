@@ -3,6 +3,7 @@ import config from '../../config';
 import logo from "../assets/images/Bluterra_Logo_4x.png";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { navigate } from '../../.cache/gatsby-browser-entry';
+import { MDBBtn } from 'mdbreact';
 
 export default class Header extends Component {
   constructor(props) {
@@ -75,7 +76,7 @@ export default class Header extends Component {
             className={` collapse navbar-collapse ${openMenu ? 'show' : ''}`}
             id="navbarResponsive"
           >
-            <ul className="navbar-nav my-auto mr-auto">
+            <ul className="navbar-nav my-auto ">
               <li className="nav-item my-auto mx-2">
                 <b tabIndex={0} role="button" className="nav-link" id={"#Solutions"}
                    onClick={() => this.handleNavLinkClick("#Solutions")}
@@ -92,15 +93,15 @@ export default class Header extends Component {
                   {/*  MRFS*/}
                   {/*</b>*/}
               </li>
-              <li className="nav-item my-auto mx-2">
-                  <a  className="nav-link" href="/contact">
-                    <b role="button" tabIndex={0}>Contact</b>
-                  </a>
-              </li>
-              {/*<li className="nav-item">*/}
-              {/*  <MDBBtn className={"text-white"} style={{lineHeight:"1.5"}} href={"/contact"}> JOIN OUR BETA </MDBBtn>*/}
+              {/*<li className="nav-item my-auto mx-2">*/}
+              {/*    <a  className="nav-link" href="/contact">*/}
+              {/*      <b role="button" tabIndex={0}>Contact</b>*/}
+              {/*    </a>*/}
               {/*</li>*/}
             </ul>
+              <div className="nav-item ml-auto">
+                <MDBBtn className={"text-white btn-tertiary"} style={{lineHeight:"1.5"}} href={"/contact"}> CONTACT </MDBBtn>
+              </div>
           </div>
 
         </div>

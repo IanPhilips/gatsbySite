@@ -50,7 +50,7 @@ class IndexPage extends Component{
       </div>
     </header>
 
-    <section className="about" id="Solutions" style={{paddingBottom:"30px"}}>
+    <section className="about" id="Solutions" style={{padding:"50px"}}>
       <div className="container" >
         <div className="row">
               <div className=" text-left col-12 col-md-6 ">
@@ -79,7 +79,7 @@ class IndexPage extends Component{
     </section>
 
 
-    <section className="benefits bg-gray" id="benefits" style={{padding:"20px 0"}}>
+    <section className="benefits bg-gray" id="benefits" style={{padding:"25px 0"}}>
       <div className="container-fluid">
         <div className="section-heading text-center ">
           <h2>Here to Help Grow Your Bottom Line</h2>
@@ -139,7 +139,7 @@ class IndexPage extends Component{
       </div>
     </section>
 
-    <section className="features " id="features" style={{paddingTop:"40px"}}>
+    <section className="features " id="features" style={{paddingTop:"50px"}}>
       <div className="container" >
         <Slide triggerOnce delay={0} direction={"right"}   >
         <div className="section-heading text-center">

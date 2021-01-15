@@ -88,7 +88,9 @@ class Contact extends Component{
                     </div>
                     {/*Interests*/}
                     <div className={"row d-flex justify-content-center align-content-center my-2"}>
-                      <label htmlFor={"beta"} className={"col-2 col-lg-2 m-3 my-1 p-0"}>Interests</label>
+                      <label htmlFor={"beta"} className={"col-2 col-lg-2 mt-3 mb-3 mr-3 my-1 p-0 interest-label"}>
+                        Interests
+                      </label>
                       <div className={"row col-5 col-lg-4 text-left mt-3 mr-2 interest-section"}>
                         <input type="checkbox" style={{width:"30px", height:"30px", marginTop:"0px"}}
                                id="beta" name="beta" value="beta"
