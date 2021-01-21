@@ -39,8 +39,7 @@ class IndexPage extends Component{
           Say hello to your customers and goodbye to contamination.
         </h1>
         <h4 className={" mt-3 mb-5 mx-auto"} style={{fontSize:"22px", maxWidth:"500px", fontWeight:"300"}} >
-          Automate contamination reduction through stream analysis and individualized customer feedback
-        </h4>
+          Track & reduce contamination, monitor waste diversion, and eliminate audits through automated collection stream analysis        </h4>
         <Fade triggerOnce delay={500} >
         <MDBBtn href={"/contact"} >
             LEARN MORE
@@ -50,7 +49,8 @@ class IndexPage extends Component{
       </div>
     </header>
 
-    <section className="about" id="Solutions" style={{padding:"50px"}}>
+
+    <section className="about" id={"Solutions"} style={{padding:"50px"}}>
       <div className="container" >
         <div className="row">
               <div className=" text-left col-12 col-md-6 ">

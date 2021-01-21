@@ -19,7 +19,7 @@ export default function Footer() {
 
         <br/>
 
-        <p> &copy; {config.siteTitle} 2020. All Rights Reserved. </p>
+        <p> &copy; {config.siteTitle} 2020-2021. All Rights Reserved. </p>
           <br/>
         </div>
 

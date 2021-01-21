@@ -40,7 +40,7 @@ export default class Header extends Component {
     if (!window.location.href.endsWith(path)) {
       await navigate("/" + path);
     }
-    scrollTo(path);
+    scrollTo(path, 'center');
     document.getElementById(path).blur();
     }
 
