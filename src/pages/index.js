@@ -36,7 +36,7 @@ class IndexPage extends Component{
 
       <div className="header-content mx-auto" >
         <h1 className={"my-2 mx-auto"}  style={{fontSize:"44px"}}>
-          Say hello to your customers and goodbye to contamination.
+          Say goodbye to contamination and hello to increased recycling participation.
         </h1>
         <h4 className={" mt-3 mb-5 mx-auto"} style={{fontSize:"22px", maxWidth:"500px", fontWeight:"300"}} >
           Track & reduce contamination, monitor waste diversion, and eliminate audits through automated collection stream analysis        </h4>
